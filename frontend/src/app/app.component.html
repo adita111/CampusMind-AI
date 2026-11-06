@@ -252,4 +252,221 @@
 
 </section>
 
+<section class="panel energy-panel">
+
+  <h2>Energy Analytics</h2>
+
+  <p>
+    Compare energy consumption and thermal comfort
+    across three different scenarios.
+  </p>
+
+  <div class="filters">
+
+    <div>
+      <label>Outside Temperature (°C)</label>
+
+      <input
+        type="number"
+        min="-30"
+        max="40"
+        [value]="outsideTemperature"
+        (input)="outsideTemperature = +$any($event.target).value"
+      />
+    </div>
+
+    <div>
+      <label>Simulation Day</label>
+
+      <select
+        [value]="simulationWeekday"
+        (change)="simulationWeekday = +$any($event.target).value"
+      >
+        <option [value]="0">Monday</option>
+        <option [value]="1">Tuesday</option>
+        <option [value]="2">Wednesday</option>
+        <option [value]="3">Thursday</option>
+        <option [value]="4">Friday</option>
+        <option [value]="5">Saturday</option>
+        <option [value]="6">Sunday</option>
+      </select>
+    </div>
+
+  </div>
+
+  <button
+    class="refresh-button run-simulation"
+    (click)="runEnergySimulation()"
+    [disabled]="energyLoading"
+  >
+    {{
+      energyLoading
+        ? 'Simulating...'
+        : 'Run Energy Simulation'
+    }}
+  </button>
+
+  <p class="error" *ngIf="energyError">
+    {{ energyError }}
+  </p>
+
+  <div *ngIf="energyResult as result">
+
+    <div class="energy-summary">
+
+      <div class="stat-card">
+        <span>Heating Savings</span>
+        <strong>
+          {{ result.heating_savings_percent | number:'1.1-2' }}%
+        </strong>
+        <small>Compared to baseline</small>
+      </div>
+
+      <div class="stat-card">
+        <span>Smart Thermal Comfort</span>
+        <strong>
+          {{ result.smart_control.comfort_percentage }}%
+        </strong>
+        <small>During scheduled activities</small>
+      </div>
+
+      <div class="stat-card">
+        <span>Optimized Comfort</span>
+        <strong>
+          {{ result.optimized_smart.comfort_percentage }}%
+        </strong>
+      </div>
+
+    </div>
+
+    <h3>Heating Energy Comparison</h3>
+
+    <div class="energy-chart">
+
+      <div
+        class="energy-chart-row"
+        *ngFor="let scenario of [
+          result.baseline,
+          result.smart_control,
+          result.optimized_smart
+        ]"
+      >
+
+        <span>{{ scenario.scenario }}</span>
+
+        <div class="energy-bar-track">
+          <div
+            class="energy-bar"
+            [style.width.%]="getHeatingBarWidth(
+              scenario.heating_kwh_thermal
+            )"
+          ></div>
+        </div>
+
+        <strong>
+          {{ scenario.heating_kwh_thermal }} kWh
+        </strong>
+
+      </div>
+
+    </div>
+
+    <h3>Detailed Energy Results</h3>
+
+    <div class="table-container">
+      <table class="optimization-table">
+
+        <thead>
+          <tr>
+            <th>Scenario</th>
+            <th>Heating (kWh thermal)</th>
+            <th>Lighting (kWh electric)</th>
+            <th>Comfort</th>
+            <th>Discomfort (room-min)</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr
+            *ngFor="let scenario of [
+              result.baseline,
+              result.smart_control,
+              result.optimized_smart
+            ]"
+          >
+
+            <td>{{ scenario.scenario }}</td>
+            <td>{{ scenario.heating_kwh_thermal }}</td>
+            <td>{{ scenario.lighting_kwh_electric }}</td>
+            <td>{{ scenario.comfort_percentage }}%</td>
+            <td>{{ scenario.discomfort_minutes }}</td>
+
+          </tr>
+
+        </tbody>
+
+      </table>
+    </div>
+
+    <h3>Room Temperature History</h3>
+
+    <div class="history-controls">
+      <label>Select Room</label>
+
+      <select
+        [value]="selectedEnergyRoom"
+        (change)="selectedEnergyRoom = $any($event.target).value"
+      >
+        <option
+          *ngFor="let room of rooms"
+          [value]="room.id"
+        >
+          {{ room.id }}
+        </option>
+      </select>
+    </div>
+
+    <div class="table-container">
+      <table class="optimization-table">
+
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Temperature</th>
+            <th>Heating</th>
+            <th>Lights</th>
+            <th>Occupied</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let item of getRoomHistory()">
+            <td>{{ item.time }}</td>
+
+            <td>
+              {{ item.temperature | number:'1.1-2' }}°C
+            </td>
+
+            <td>
+              {{ item.heating_on ? 'ON' : 'OFF' }}
+            </td>
+
+            <td>
+              {{ item.lights_on ? 'ON' : 'OFF' }}
+            </td>
+
+            <td>
+              {{ item.occupied ? 'Yes' : 'No' }}
+            </td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+
+  </div>
+
+</section>
+
 </div>

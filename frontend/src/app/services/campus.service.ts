@@ -69,6 +69,41 @@ export interface OptimizationResult {
 }
 
 
+export interface EnergyHistory {
+  time: string;
+  room_id: string;
+  heating_zone: string;
+  temperature: number;
+  heating_on: boolean;
+  lights_on: boolean;
+  occupied: boolean;
+}
+
+export interface EnergyScenario {
+  scenario: string;
+  heating_kwh_thermal: number;
+  lighting_kwh_electric: number;
+  discomfort_minutes: number;
+  occupied_room_minutes: number;
+  comfort_percentage: number;
+  history: EnergyHistory[];
+}
+
+export interface EnergyComparison {
+  outside_temperature: number;
+  weekday: number;
+  baseline: EnergyScenario;
+  smart_control: EnergyScenario;
+  optimized_smart: EnergyScenario;
+  heating_savings_percent: number;
+  schedule_optimization: {
+    moved_activities: number;
+    original_zone_count: number;
+    optimized_zone_count: number;
+  };
+}
+
+
 @Injectable({
   providedIn: 'root'
 })
@@ -115,6 +150,17 @@ export class CampusService {
   return this.http.post<OptimizationResult>(
     `${this.apiUrl}/optimize/schedule`,
     {}
+  );
+}
+compareEnergy(outsideTemperature: number, weekday: number) {
+  return this.http.get<EnergyComparison>(
+    `${this.apiUrl}/simulation/compare`,
+    {
+      params: {
+        outside_temperature: outsideTemperature,
+        weekday: weekday
+      }
+    }
   );
 }
 }
