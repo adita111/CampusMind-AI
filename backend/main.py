@@ -7,6 +7,9 @@ from models.room_state import RoomState, SimulationRequest
 import httpx
 from services.weather_service import get_weather_forecast
 
+from datetime import datetime
+from services.heating_controller import predict_heating_start
+
 from services.room_service import (
     get_all_rooms,
     get_room_by_id,
@@ -134,3 +137,28 @@ def weather_forecast():
             detail="Weather service unavailable"
         ) from error
 
+
+@app.get("/rooms/{room_id}/heating/predict")
+def predict_room_heating(
+    room_id: str,
+    course_start: datetime,
+    outside_temperature: float = -3.0
+):
+    room = get_room_by_id(room_id)
+    state = get_room_state(room_id)
+
+    if room is None or state is None:
+        raise HTTPException(
+            status_code=404,
+            detail="Room not found"
+        )
+
+    result = predict_heating_start(
+        room=room,
+        current_temperature=state.current_temperature,
+        outside_temperature=outside_temperature,
+        course_start=course_start,
+        target_temperature=state.target_temperature
+    )
+
+    return result
