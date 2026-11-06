@@ -9,6 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from services.schedule_optimizer import optimize_schedule
 from services.energy_simulation_service import simulate_energy
 from services.smart_energy_service import simulate_smart_energy
+from services.energy_comparison_service import compare_energy
 
 import httpx
 from services.weather_service import get_weather_forecast
@@ -307,3 +308,26 @@ def run_smart_simulation(
         outside_temperature=outside_temperature,
         weekday=weekday
     )
+
+
+@app.get("/simulation/compare")
+def compare_energy_scenarios(
+    outside_temperature: float = -3.0,
+    weekday: int = 0
+):
+    if weekday < 0 or weekday > 6:
+        raise HTTPException(
+            status_code=422,
+            detail="Weekday must be between 0 and 6"
+        )
+
+    try:
+        return compare_energy(
+            outside_temperature=outside_temperature,
+            weekday=weekday
+        )
+    except ValueError as error:
+        raise HTTPException(
+            status_code=422,
+            detail=str(error)
+        )
