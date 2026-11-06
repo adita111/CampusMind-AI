@@ -7,6 +7,8 @@ from models.heating_zone import HeatingZone
 from models.room_state import RoomState, SimulationRequest
 from fastapi.middleware.cors import CORSMiddleware
 from services.schedule_optimizer import optimize_schedule
+from services.energy_simulation_service import simulate_energy
+from services.smart_energy_service import simulate_smart_energy
 
 import httpx
 from services.weather_service import get_weather_forecast
@@ -280,3 +282,28 @@ def run_schedule_optimization():
             detail=str(error)
         )
 
+
+@app.get("/simulation/baseline")
+def run_baseline_simulation(
+    outside_temperature: float = -3.0
+):
+    return simulate_energy(
+        outside_temperature=outside_temperature
+    )
+
+
+@app.get("/simulation/smart")
+def run_smart_simulation(
+    outside_temperature: float = -3.0,
+    weekday: int = 0
+):
+    if weekday < 0 or weekday > 6:
+        raise HTTPException(
+            status_code=422,
+            detail="Weekday must be between 0 and 6"
+        )
+
+    return simulate_smart_energy(
+        outside_temperature=outside_temperature,
+        weekday=weekday
+    )
