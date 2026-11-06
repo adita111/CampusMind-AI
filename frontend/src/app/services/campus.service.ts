@@ -1,0 +1,98 @@
+
+import { Injectable, inject } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
+export interface Building {
+  id: string;
+  name: string;
+  address: string | null;
+}
+
+export interface Floor {
+  id: string;
+  building_id: string;
+  number: number;
+  name: string | null;
+}
+
+export interface Room {
+  id: string;
+  building: string;
+  floor: number;
+  area_m2: number;
+  capacity: number;
+  room_type: string;
+  heating_zone: string;
+}
+
+export interface Sensor {
+  id: string;
+  room_id: string;
+  sensor_type: string;
+  unit: string;
+  simulated: boolean;
+}
+
+export interface SensorReading {
+  sensor_id: string;
+  room_id: string;
+  value: number;
+  unit: string;
+  simulated: boolean;
+}
+
+export interface ScheduledActivity {
+  id: string;
+  room_id: string;
+  course_name: string;
+  weekday: number;
+  start_time: string;
+  end_time: string;
+  group: string;
+  students_count: number;
+  activity_type: string;
+}
+
+@Injectable({
+  providedIn: 'root'
+})
+export class CampusService {
+  private http = inject(HttpClient);
+  private apiUrl = 'http://127.0.0.1:8000';
+
+  getBuildings() {
+    return this.http.get<Building[]>(
+      `${this.apiUrl}/buildings`
+    );
+  }
+
+  getFloors(buildingId: string) {
+    return this.http.get<Floor[]>(
+      `${this.apiUrl}/buildings/${buildingId}/floors`
+    );
+  }
+
+  getRooms(buildingId: string, floor: number) {
+    return this.http.get<Room[]>(
+      `${this.apiUrl}/buildings/${buildingId}/floors/${floor}/rooms`
+    );
+  }
+
+  getRoomSensors(roomId: string) {
+    return this.http.get<Sensor[]>(
+      `${this.apiUrl}/rooms/${roomId}/sensors`
+    );
+  }
+
+  getSensorReading(sensorId: string) {
+    return this.http.get<SensorReading>(
+      `${this.apiUrl}/sensors/${sensorId}/reading`
+    );
+  }
+
+  getRoomSchedule(roomId: string) {
+    return this.http.get<ScheduledActivity[]>(
+      `${this.apiUrl}/rooms/${roomId}/schedule`
+    );
+  }
+}

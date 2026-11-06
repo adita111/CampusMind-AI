@@ -1,0 +1,153 @@
+
+<div class="dashboard">
+
+  <header>
+    <div>
+      <h1>CampusMind AI</h1>
+      <p>Smart Campus Energy Management</p>
+    </div>
+
+    <span class="status">Demo Mode</span>
+  </header>
+
+  <section class="panel">
+    <h2>Campus Overview</h2>
+
+    <div class="filters">
+
+      <div>
+        <label>Building</label>
+
+        <select
+          [value]="selectedBuilding"
+          (change)="selectBuilding($any($event.target).value)"
+        >
+          <option
+            *ngFor="let building of buildings"
+            [value]="building.id"
+          >
+            {{ building.name }}
+          </option>
+        </select>
+      </div>
+
+      <div>
+        <label>Floor</label>
+
+        <select
+          [value]="selectedFloor ?? ''"
+          (change)="selectFloor(+$any($event.target).value)"
+        >
+          <option
+            *ngFor="let floor of floors"
+            [value]="floor.number"
+          >
+            {{ floor.name || 'Floor ' + floor.number }}
+          </option>
+        </select>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>Rooms & Hallways</h2>
+
+    <div class="room-grid">
+
+      <button
+        *ngFor="let room of rooms"
+        class="room-card"
+        [class.selected]="selectedRoom?.id === room.id"
+        (click)="selectRoom(room)"
+      >
+        <strong>{{ room.id }}</strong>
+        <span>{{ room.room_type }}</span>
+        <small>{{ room.area_m2 }} m²</small>
+      </button>
+
+    </div>
+  </section>
+
+  <section class="panel" *ngIf="selectedRoom">
+
+    <div class="section-header">
+      <h2>{{ selectedRoom.id }} — Room Details</h2>
+
+      <button
+        class="refresh-button"
+        (click)="refreshRoom()"
+        [disabled]="loading"
+      >
+        {{ loading ? 'Loading...' : 'Refresh' }}
+      </button>
+    </div>
+
+    <div class="stats">
+
+      <div class="stat-card">
+        <span>Current Temperature</span>
+
+        <strong>
+          {{ sensorReading?.value ?? '--' }} °C
+        </strong>
+
+        <small>Virtual temperature sensor</small>
+      </div>
+
+      <div class="stat-card">
+        <span>Area</span>
+
+        <strong>{{ selectedRoom.area_m2 }} m²</strong>
+      </div>
+
+      <div class="stat-card">
+        <span>Capacity</span>
+
+        <strong>{{ selectedRoom.capacity }}</strong>
+      </div>
+
+      <div class="stat-card">
+        <span>Heating Zone</span>
+
+        <strong>{{ selectedRoom.heating_zone }}</strong>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="panel" *ngIf="selectedRoom">
+    <h2>Room Schedule</h2>
+
+    <p *ngIf="schedule.length === 0">
+      No scheduled activities.
+    </p>
+
+    <div
+      *ngFor="let activity of schedule"
+      class="activity"
+    >
+      <div>
+        <strong>{{ activity.course_name }}</strong>
+        <p>Group: {{ activity.group }}</p>
+      </div>
+
+      <div>
+        <strong>
+          Day {{ activity.weekday }}
+        </strong>
+
+        <p>
+          {{ activity.start_time }} -
+          {{ activity.end_time }}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <p class="error" *ngIf="error">
+    {{ error }}
+  </p>
+
+</div>

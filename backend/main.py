@@ -5,6 +5,7 @@ from models.room import Room
 from models.building import Building, Floor
 from models.heating_zone import HeatingZone
 from models.room_state import RoomState, SimulationRequest
+from fastapi.middleware.cors import CORSMiddleware
 
 import httpx
 from services.weather_service import get_weather_forecast
@@ -256,3 +257,12 @@ def room_sensors(room_id: str):
 
     return get_sensors_by_room(room_id)
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:4200",
+        "http://127.0.0.1:4200"
+    ],
+    allow_methods=["*"],
+    allow_headers=["*"]
+)
