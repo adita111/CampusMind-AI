@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 
 from models.sensor import Sensor, SensorReading
-from services.room_service import get_room_state
+from services.temperature_generator_mock import get_generated_temperature
 
 
 SENSORS_FILE = (
@@ -42,20 +42,19 @@ def get_sensor_reading(sensor_id: str) -> SensorReading | None:
     if sensor is None:
         return None
 
-    state = get_room_state(sensor.room_id)
-
-    if state is None:
+    if sensor.sensor_type != "temperature":
         return None
 
-    if sensor.sensor_type == "temperature":
-        value = state.current_temperature
-    else:
+    temperature = get_generated_temperature(sensor.room_id)
+
+    if temperature is None:
         return None
 
     return SensorReading(
         sensor_id=sensor.id,
         room_id=sensor.room_id,
-        value=value,
+        value=temperature,
         unit=sensor.unit,
         simulated=sensor.simulated
     )
+

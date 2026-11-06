@@ -1,6 +1,7 @@
 
-import { Component, OnInit, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, OnInit, inject, OnDestroy, NgZone, PLATFORM_ID, } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { interval, Subscription } from 'rxjs';
 
 import {
   CampusService,
@@ -20,8 +21,12 @@ import {
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, OnDestroy {
   private campusService = inject(CampusService);
+  private ngZone = inject(NgZone);
+  private platformId = inject(PLATFORM_ID);
+  private temperatureTimer?: Subscription;
+  private temperatureRequestInProgress = false;
 
   buildings: Building[] = [];
   floors: Floor[] = [];
@@ -50,9 +55,42 @@ simulationWeekday = 0;
 
 selectedEnergyRoom = 'IE101';
 
-  ngOnInit(): void {
-    this.loadBuildings();
+  
+ngOnInit(): void {
+  this.loadBuildings();
+
+  // Run polling only in the browser
+  if (isPlatformBrowser(this.platformId)) {
+
+    // Keep the repeating timer outside Angular Zone
+    this.ngZone.runOutsideAngular(() => {
+
+      this.temperatureTimer = interval(10000).subscribe(() => {
+
+        if (
+          this.selectedRoom &&
+          !this.temperatureRequestInProgress
+        ) {
+
+          // Re-enter Angular Zone for UI updates
+          this.ngZone.run(() => {
+            this.refreshTemperature();
+          });
+
+        }
+
+      });
+
+    });
+
   }
+}
+
+
+ngOnDestroy(): void {
+  this.temperatureTimer?.unsubscribe();
+}
+
 
   loadBuildings(): void {
     this.campusService.getBuildings().subscribe({
@@ -123,60 +161,31 @@ selectRoom(room: Room): void {
   this.refreshRoom();
 }
 
-  refreshRoom(): void {
-    const room = this.selectedRoom;
 
-    if (!room) {
-      return;
-    }
+refreshRoom(): void {
+  const room = this.selectedRoom;
 
-    this.loading = true;
-    this.error = '';
-
-    this.campusService.getRoomSensors(room.id).subscribe({
-      next: (sensors) => {
-        const tempSensor = sensors.find(
-          sensor => sensor.sensor_type === 'temperature'
-        );
-
-        if (tempSensor) {
-          this.campusService
-            .getSensorReading(tempSensor.id)
-            .subscribe({
-              next: (reading) => {
-                if (this.selectedRoom?.id === room.id) {
-                  this.sensorReading = reading;
-                }
-                this.loading = false;
-              },
-              error: () => {
-                this.loading = false;
-                this.error = 'Could not load temperature';
-              }
-            });
-        } else {
-          this.loading = false;
-        }
-      },
-      error: () => {
-        this.loading = false;
-        this.error = 'Could not load sensors';
-      }
-    });
-
-    this.campusService.getRoomSchedule(room.id).subscribe({
-      next: (data) => {
-        if (this.selectedRoom?.id === room.id) {
-          this.schedule = data;
-        }
-      },
-      error: () => {
-        this.error = 'Could not load schedule';
-      }
-    });
-
-    
+  if (!room) {
+    return;
   }
+
+  this.error = '';
+
+  // Check the temperature and update only if changed
+  this.refreshTemperature();
+
+  // Reload the room schedule
+  this.campusService.getRoomSchedule(room.id).subscribe({
+    next: (data) => {
+      if (this.selectedRoom?.id === room.id) {
+        this.schedule = data;
+      }
+    },
+    error: () => {
+      this.error = 'Could not load schedule';
+    }
+  });
+}
 
   
 runOptimization(): void {
@@ -201,6 +210,7 @@ runOptimization(): void {
     }
   });
 }
+
 
 runEnergySimulation(): void {
   this.energyLoading = true;
@@ -250,6 +260,54 @@ getRoomHistory() {
       item.time >= '04:00' &&
       item.time <= '12:00'
   );
+}
+
+
+
+refreshTemperature(): void {
+  const room = this.selectedRoom;
+
+  if (!room || this.temperatureRequestInProgress) {
+    return;
+  }
+
+  this.temperatureRequestInProgress = true;
+
+  this.campusService.getRoomSensors(room.id).subscribe({
+    next: (sensors) => {
+      const tempSensor = sensors.find(
+        sensor => sensor.sensor_type === 'temperature'
+      );
+
+      if (!tempSensor) {
+        this.temperatureRequestInProgress = false;
+        return;
+      }
+
+      this.campusService.getSensorReading(tempSensor.id).subscribe({
+        next: (reading) => {
+          if (this.selectedRoom?.id === room.id) {
+            if (
+              this.sensorReading === null ||
+              this.sensorReading.value !== reading.value
+            ) {
+              this.sensorReading = reading;
+            }
+          }
+
+          this.temperatureRequestInProgress = false;
+        },
+        error: (error) => {
+          console.error('Temperature reading error:', error);
+          this.temperatureRequestInProgress = false;
+        }
+      });
+    },
+    error: (error) => {
+      console.error('Sensor loading error:', error);
+      this.temperatureRequestInProgress = false;
+    }
+  });
 }
 
 
