@@ -9,6 +9,7 @@ from services.temperature_generator_mock import get_generated_temperature
 SENSORS_FILE = (
     Path(__file__).resolve().parent.parent
     / "data"
+    / "generated"
     / "sensors.json"
 )
 

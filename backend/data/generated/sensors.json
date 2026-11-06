@@ -1,0 +1,548 @@
+[
+  {
+    "id": "TEMP_A0",
+    "room_id": "A0",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_AUMOVIO_Aula",
+    "room_id": "AUMOVIO_Aula",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_AUMOVIO_Lab1",
+    "room_id": "AUMOVIO_Lab1",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_AUMOVIO_Lab2",
+    "room_id": "AUMOVIO_Lab2",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_B001_Campus",
+    "room_id": "B001_Campus",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_B002",
+    "room_id": "B002",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_B002-Chimie",
+    "room_id": "B002-Chimie",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_B003_Campus",
+    "room_id": "B003_Campus",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_B008_Campus",
+    "room_id": "B008_Campus",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_B009-Fizica",
+    "room_id": "B009-Fizica",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_B009_Campus",
+    "room_id": "B009_Campus",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_B013_Capus",
+    "room_id": "B013_Capus",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_B014_Campus",
+    "room_id": "B014_Campus",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_B015_Campus",
+    "room_id": "B015_Campus",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_B1",
+    "room_id": "B1",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_B101_Campus",
+    "room_id": "B101_Campus",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_B103_Campus",
+    "room_id": "B103_Campus",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_B104_Campus",
+    "room_id": "B104_Campus",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_B105_Campus",
+    "room_id": "B105_Campus",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_B110_Campus",
+    "room_id": "B110_Campus",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_B111_Campus",
+    "room_id": "B111_Campus",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_B112_Campus",
+    "room_id": "B112_Campus",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_B115_Campus",
+    "room_id": "B115_Campus",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_B116_Campus",
+    "room_id": "B116_Campus",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_B117_Campus",
+    "room_id": "B117_Campus",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_B300",
+    "room_id": "B300",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_B304-Fizica",
+    "room_id": "B304-Fizica",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_B308_Ratiu",
+    "room_id": "B308_Ratiu",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_B403",
+    "room_id": "B403",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_C1",
+    "room_id": "C1",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_COMPA",
+    "room_id": "COMPA",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_D1",
+    "room_id": "D1",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_D2",
+    "room_id": "D2",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_FLA1_16",
+    "room_id": "FLA1.16",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_FLA1_41",
+    "room_id": "FLA1.41",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_FLA1_62",
+    "room_id": "FLA1.62",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_IE002",
+    "room_id": "IE002",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_IE003",
+    "room_id": "IE003",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_IE004",
+    "room_id": "IE004",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_IE005",
+    "room_id": "IE005",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_IE006",
+    "room_id": "IE006",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_IE012",
+    "room_id": "IE012",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_IE013",
+    "room_id": "IE013",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_IE101",
+    "room_id": "IE101",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_IE102",
+    "room_id": "IE102",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_IE112",
+    "room_id": "IE112",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_IE113",
+    "room_id": "IE113",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_IE206",
+    "room_id": "IE206",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_IE301",
+    "room_id": "IE301",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_IE302",
+    "room_id": "IE302",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_IE303",
+    "room_id": "IE303",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_IE304",
+    "room_id": "IE304",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_IE305",
+    "room_id": "IE305",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_L1A_Litere",
+    "room_id": "L1A_Litere",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_L1B_Litere",
+    "room_id": "L1B_Litere",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_Litere",
+    "room_id": "Litere",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_M505",
+    "room_id": "M505",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_Medias_A0",
+    "room_id": "Medias_A0",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_Medias_A1",
+    "room_id": "Medias_A1",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_Medias_A2",
+    "room_id": "Medias_A2",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_Medias_S11",
+    "room_id": "Medias_S11",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_Medias_S21",
+    "room_id": "Medias_S21",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_Medias_S22",
+    "room_id": "Medias_S22",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_Medias_S23",
+    "room_id": "Medias_S23",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_NTTDATA_Aula_Brukenthal",
+    "room_id": "NTTDATA_Aula_Brukenthal",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_NTTDATA_Evolution",
+    "room_id": "NTTDATA_Evolution",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_NTTDATA_Quest",
+    "room_id": "NTTDATA_Quest",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_NTTDATA_Sensei",
+    "room_id": "NTTDATA_Sensei",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_Sala_-_A12_-_Corp_A",
+    "room_id": "Sala - A12 - Corp A",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_Sala_-_A16_-_Corp_A",
+    "room_id": "Sala - A16 - Corp A",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_Sala_-_A17_-_Corp_A",
+    "room_id": "Sala - A17 - Corp A",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_Sala_-_A18_-_Corp_A",
+    "room_id": "Sala - A18 - Corp A",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_Sala_-_A22_-_Corp_A",
+    "room_id": "Sala - A22 - Corp A",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_Sala_-_A25_-_Corp_A",
+    "room_id": "Sala - A25 - Corp A",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_Sala_-_A27_-_Corp_A",
+    "room_id": "Sala - A27 - Corp A",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_TRANSELECTRICA_S1",
+    "room_id": "TRANSELECTRICA_S1",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_TRANSELECTRICA_S2",
+    "room_id": "TRANSELECTRICA_S2",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_Teren_sport_Campus",
+    "room_id": "Teren_sport_Campus",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  }
+]

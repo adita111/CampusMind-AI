@@ -164,10 +164,16 @@
 
     <button
       class="refresh-button"
-      (click)="runOptimization()"
+      (click)="toggleOptimization()"
       [disabled]="optimizing"
     >
-      {{ optimizing ? 'Optimizing...' : 'Optimize Schedule' }}
+      {{
+        optimizing
+        ? 'Optimizing...'
+        : showOptimizationResults
+        ? 'Hide Optimization'
+        : 'Optimize Schedule'
+  }}
     </button>
   </div>
 
@@ -175,7 +181,7 @@
     {{ optimizationError }}
   </p>
 
-  <div *ngIf="optimizationResult as result">
+  <div *ngIf="showOptimizationResults && optimizationResult as result">
 
     <div class="stats">
 
@@ -291,6 +297,18 @@
         <option [value]="6">Sunday</option>
       </select>
     </div>
+
+  <div>
+    <label>Simulation Week</label>
+
+    <select
+      [value]="energyWeekParity"
+      (change)="energyWeekParity = $any($event.target).value"
+    >
+      <option value="odd">Odd week</option>
+      <option value="even">Even week</option>
+    </select>
+  </div>
 
   </div>
 
@@ -409,25 +427,25 @@
       </table>
     </div>
 
-    <h3>Room Temperature History</h3>
+    <button
+  type="button"
+  class="refresh-button"
+  (click)="toggleEnergyHistory()"
+>
+  {{
+    showEnergyHistory
+      ? 'Hide Room Temperature History'
+      : 'Show Room Temperature History'
+  }}
+</button>
 
-    <div class="history-controls">
-      <label>Select Room</label>
+<div *ngIf="showEnergyHistory">
 
-      <select
-        [value]="selectedEnergyRoom"
-        (change)="selectedEnergyRoom = $any($event.target).value"
-      >
-        <option
-          *ngFor="let room of rooms"
-          [value]="room.id"
-        >
-          {{ room.id }}
-        </option>
-      </select>
-    </div>
+  <h3>Room Temperature History</h3>
 
-    <div class="table-container">
+  <div class="history-controls">
+
+    <div class="energy-history-table">
       <table class="optimization-table">
 
         <thead>
@@ -466,7 +484,9 @@
     </div>
 
   </div>
+</div>
 
-</section>
+
+
 
 </div>

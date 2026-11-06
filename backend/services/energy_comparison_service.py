@@ -7,7 +7,6 @@ from services.campus_service import get_heating_zones
 from services.schedule_optimizer import optimize_schedule
 from services.thermal_service import calculate_next_temperature
 
-
 STEP_MINUTES = 15
 COMFORT_TEMP = 21.0
 ECO_TEMP = 16.0
@@ -26,13 +25,12 @@ def activity_value(activity, field):
     return getattr(activity, field)
 
 
-def room_occupied(room_id, minute, activities, weekday):
+def room_occupied(room_id, minute, activities_by_room, weekday):
     return any(
-        activity_value(a, "room_id") == room_id
-        and activity_value(a, "weekday") == weekday
+        activity_value(a, "weekday") == weekday
         and to_minutes(activity_value(a, "start_time")) <= minute
         < to_minutes(activity_value(a, "end_time"))
-        for a in activities
+        for a in activities_by_room.get(room_id, [])
     )
 
 
@@ -60,7 +58,7 @@ def predict_temperature(
 def should_preheat_zone(
     zone_rooms,
     temperatures,
-    activities,
+    activities_by_room,
     minute,
     weekday,
     outside_temperature
@@ -68,10 +66,7 @@ def should_preheat_zone(
     comfort_limit = COMFORT_TEMP - 0.5
 
     for room in zone_rooms:
-        for activity in activities:
-
-            if activity_value(activity, "room_id") != room.id:
-                continue
+        for activity in activities_by_room.get(room.id, []):
 
             if activity_value(activity, "weekday") != weekday:
                 continue
@@ -150,6 +145,12 @@ def simulate_scenario(
         if room.id in temperatures
     }
 
+    # Index once: large real ULBS timetables must not be scanned for every room.
+    activities_by_room = {}
+    for activity in activities:
+        room_id = activity_value(activity, "room_id")
+        activities_by_room.setdefault(room_id, []).append(activity)
+
     heating_energy = 0.0
     lighting_energy = 0.0
     discomfort_minutes = 0
@@ -184,7 +185,7 @@ def simulate_scenario(
                     if room_occupied(
                         room.id,
                         minute,
-                        activities,
+                        activities_by_room,
                         weekday
                     )
                 ]
@@ -192,7 +193,7 @@ def simulate_scenario(
                 preheat_required = should_preheat_zone(
                     zone_rooms=zone_rooms,
                     temperatures=temperatures,
-                    activities=activities,
+                    activities_by_room=activities_by_room,
                     minute=minute,
                     weekday=weekday,
                     outside_temperature=outside_temperature
@@ -257,7 +258,7 @@ def simulate_scenario(
                 occupied = room_occupied(
                     room.id,
                     minute,
-                    activities,
+                    activities_by_room,
                     weekday
                 )
 
@@ -332,10 +333,14 @@ def simulate_scenario(
     }
 
 
-def compare_energy(outside_temperature=-3.0, weekday=0):
-    original_activities = get_all_activities()
+def compare_energy(outside_temperature=-3.0, weekday=0, week_parity="odd"):
+    if week_parity not in {"odd", "even"}:
+        raise ValueError("week_parity must be 'odd' or 'even'")
 
-    optimized = optimize_schedule()
+    original_activities = get_all_activities(
+        weekday=weekday, week_parity=week_parity
+    )
+    optimized = optimize_schedule(original_activities)
     optimized_activities = optimized["activities"]
 
     # Scenario A: original schedule + fixed heating.
@@ -379,6 +384,8 @@ def compare_energy(outside_temperature=-3.0, weekday=0):
     return {
         "outside_temperature": outside_temperature,
         "weekday": weekday,
+        "week_parity": week_parity,
+        "schedule_source": "ulbs",
         "baseline": baseline,
         "smart_control": smart,
         "optimized_smart": optimized_smart,
@@ -386,6 +393,8 @@ def compare_energy(outside_temperature=-3.0, weekday=0):
             heating_savings_percent, 2
         ),
         "schedule_optimization": {
+            "status": optimized["status"],
+            "message": optimized.get("message", ""),
             "moved_activities": optimized["moved_activities"],
             "original_zone_count": optimized["original_zone_count"],
             "optimized_zone_count": optimized["optimized_zone_count"]

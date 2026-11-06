@@ -1,5 +1,5 @@
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Query
 
 from models.room import Room
 from models.building import Building, Floor
@@ -43,6 +43,16 @@ from models.scheduled_activity import ScheduledActivity
 from services.schedule_service import (
     get_all_activities,
     get_room_schedule
+)
+
+from services.ulbs_schedule_service import (
+    get_ulbs_rooms,
+    get_ulbs_schedule
+)
+
+from services.ulbs_occupancy_service import (
+    get_room_coverage,
+    get_room_occupancy
 )
 
 from services.thermal_service import calculate_next_temperature
@@ -313,7 +323,8 @@ def run_smart_simulation(
 @app.get("/simulation/compare")
 def compare_energy_scenarios(
     outside_temperature: float = -3.0,
-    weekday: int = 0
+    weekday: int = 0,
+    week_parity: str = "odd"
 ):
     if weekday < 0 or weekday > 6:
         raise HTTPException(
@@ -321,13 +332,93 @@ def compare_energy_scenarios(
             detail="Weekday must be between 0 and 6"
         )
 
+    if week_parity not in ("odd", "even"):
+        raise HTTPException(
+            status_code=422,
+            detail="Week parity must be 'odd' or 'even'"
+        )
+
     try:
         return compare_energy(
             outside_temperature=outside_temperature,
-            weekday=weekday
+            weekday=weekday,
+            week_parity=week_parity
         )
     except ValueError as error:
         raise HTTPException(
             status_code=422,
             detail=str(error)
         )
+
+
+@app.get("/ulbs/rooms")
+def list_ulbs_rooms():
+    try:
+        return get_ulbs_rooms()
+    except (FileNotFoundError, ValueError) as exc:
+        raise HTTPException(
+            status_code=503,
+            detail=str(exc)
+        ) from exc
+
+
+@app.get("/ulbs/schedule")
+def list_ulbs_schedule(
+    room_id: str | None = None,
+    weekday: int | None = Query(
+        default=None, ge=0, le=6
+    ),
+    week_parity: str = Query(
+        default="all",
+        pattern="^(all|odd|even)$"
+    )
+):
+    try:
+        return get_ulbs_schedule(
+            room_id=room_id,
+            weekday=weekday,
+            week_parity=week_parity
+        )
+    except (FileNotFoundError, ValueError) as exc:
+        raise HTTPException(
+            status_code=503,
+            detail=str(exc)
+        ) from exc
+
+@app.get("/ulbs/coverage")
+def ulbs_room_coverage():
+    try:
+        return get_room_coverage()
+    except (OSError, ValueError) as exc:
+        raise HTTPException(
+            status_code=503,
+            detail=str(exc)
+        ) from exc
+
+
+@app.get("/ulbs/occupancy")
+def ulbs_room_occupancy(
+    weekday: int = Query(ge=0, le=6),
+    time: str = Query(
+        pattern=r"^([01]\d|2[0-3]):[0-5]\d$"
+    ),
+    week_parity: str = Query(
+        default="odd",
+        pattern="^(odd|even)$"
+    ),
+    only_known_rooms: bool = False,
+):
+    try:
+        return get_room_occupancy(
+            weekday=weekday,
+            time=time,
+            week_parity=week_parity,
+            only_known_rooms=only_known_rooms
+        )
+    except (OSError, ValueError) as exc:
+        raise HTTPException(
+            status_code=503,
+            detail=str(exc)
+        ) from exc
+
+    

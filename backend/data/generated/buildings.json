@@ -1,0 +1,38 @@
+[
+  {
+    "id": "A",
+    "name": "Building A"
+  },
+  {
+    "id": "B",
+    "name": "Building B"
+  },
+  {
+    "id": "C",
+    "name": "Building C"
+  },
+  {
+    "id": "D",
+    "name": "Building D"
+  },
+  {
+    "id": "FLA",
+    "name": "Building FLA"
+  },
+  {
+    "id": "IE",
+    "name": "Building IE"
+  },
+  {
+    "id": "L",
+    "name": "Building L"
+  },
+  {
+    "id": "M",
+    "name": "Building M"
+  },
+  {
+    "id": "UNKNOWN",
+    "name": "Unclassified rooms"
+  }
+]

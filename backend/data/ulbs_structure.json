@@ -1,0 +1,4963 @@
+{
+  "success": true,
+  "message": "Faculty structure retrieved successfully",
+  "data": [
+    {
+      "department": {
+        "id": 1,
+        "name": "Calculatoare și Inginerie Electrică",
+        "abbreviation": "CIE",
+        "directorId": "c870b4fb-20b8-4533-a11a-8a2c82038c6c",
+        "isVisible": true
+      },
+      "children": [
+        {
+          "studyFormation": {
+            "id": 1235,
+            "name": "Calc",
+            "label": "Calc",
+            "order": 500,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 1,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1150,
+                "name": "An_I_C",
+                "label": "An_I_C",
+                "order": 400,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1057,
+                    "name": "C_11",
+                    "label": "C_11",
+                    "order": 0,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 911,
+                        "name": "C_11/1",
+                        "label": "C_11/1",
+                        "order": 1,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 912,
+                        "name": "C_11/2",
+                        "label": "C_11/2",
+                        "order": 2,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "studyFormation": {
+                    "id": 1293,
+                    "name": "C_12",
+                    "label": "C_12",
+                    "order": 1,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1294,
+                        "name": "C_12/1",
+                        "label": "C_12/1",
+                        "order": 0,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 1295,
+                        "name": "C_12/2",
+                        "label": "C_12/2",
+                        "order": 1,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1151,
+                "name": "An_II_C",
+                "label": "An_II_C",
+                "order": 401,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1059,
+                    "name": "C_21",
+                    "label": "C_21",
+                    "order": 202,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 914,
+                        "name": "C_21/1",
+                        "label": "C_21/1",
+                        "order": 4,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 915,
+                        "name": "C_21/2",
+                        "label": "C_21/2",
+                        "order": 5,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "studyFormation": {
+                    "id": 1060,
+                    "name": "C_22",
+                    "label": "C_22",
+                    "order": 203,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 916,
+                        "name": "C_22/1",
+                        "label": "C_22/1",
+                        "order": 6,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1152,
+                "name": "An_III_C",
+                "label": "An_III_C",
+                "order": 402,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1062,
+                    "name": "C_31",
+                    "label": "C_31",
+                    "order": 205,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 920,
+                        "name": "C_31/1",
+                        "label": "C_31/1",
+                        "order": 10,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 921,
+                        "name": "C_31/2",
+                        "label": "C_31/2",
+                        "order": 11,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "studyFormation": {
+                    "id": 1063,
+                    "name": "C_32",
+                    "label": "C_32",
+                    "order": 206,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 923,
+                        "name": "C_32/1",
+                        "label": "C_32/1",
+                        "order": 13,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 924,
+                        "name": "C_32/2",
+                        "label": "C_32/2",
+                        "order": 14,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 925,
+                        "name": "C_32/3",
+                        "label": "C_32/3",
+                        "order": 15,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1153,
+                "name": "An_IV_C",
+                "label": "An_IV_C",
+                "order": 403,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1064,
+                    "name": "C_41",
+                    "label": "C_41",
+                    "order": 207,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 926,
+                        "name": "C_41/1",
+                        "label": "C_41/1",
+                        "order": 16,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 927,
+                        "name": "C_41/2",
+                        "label": "C_41/2",
+                        "order": 17,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "studyFormation": {
+                    "id": 1065,
+                    "name": "C_42",
+                    "label": "C_42",
+                    "order": 208,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 929,
+                        "name": "C_42/1",
+                        "label": "C_42/1",
+                        "order": 19,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 930,
+                        "name": "C_42/2",
+                        "label": "C_42/2",
+                        "order": 20,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 928,
+                        "name": "C_42/3",
+                        "label": "C_42/3",
+                        "order": 21,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1236,
+            "name": "TI",
+            "label": "TI",
+            "order": 501,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 1,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1154,
+                "name": "An_I_TI",
+                "label": "An_I_TI",
+                "order": 404,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1066,
+                    "name": "TI_11",
+                    "label": "TI_11",
+                    "order": 209,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 931,
+                        "name": "TI_11/1",
+                        "label": "TI_11/1",
+                        "order": 21,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 932,
+                        "name": "TI_11/2",
+                        "label": "TI_11/2",
+                        "order": 22,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1155,
+                "name": "An_II_TI",
+                "label": "An_II_TI",
+                "order": 405,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1067,
+                    "name": "TI_21",
+                    "label": "TI_21",
+                    "order": 210,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 933,
+                        "name": "TI_21/1",
+                        "label": "TI_21/1",
+                        "order": 23,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 934,
+                        "name": "TI_21/2",
+                        "label": "TI_21/2",
+                        "order": 24,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1156,
+                "name": "An_III_TI",
+                "label": "An_III_TI",
+                "order": 406,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1068,
+                    "name": "TI_31",
+                    "label": "TI_31",
+                    "order": 212,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 936,
+                        "name": "TI_31/1",
+                        "label": "TI_31/1",
+                        "order": 26,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 937,
+                        "name": "TI_31/2",
+                        "label": "TI_31/2",
+                        "order": 27,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 938,
+                        "name": "TI_31/3",
+                        "label": "TI_31/3",
+                        "order": 28,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1157,
+                "name": "An_IV_TI",
+                "label": "An_IV_TI",
+                "order": 407,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1069,
+                    "name": "TI_41",
+                    "label": "TI_41",
+                    "order": 213,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 939,
+                        "name": "TI_41/1",
+                        "label": "TI_41/1",
+                        "order": 0,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 1292,
+                        "name": "TI_41/2",
+                        "label": "TI_41/2",
+                        "order": 1,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1284,
+            "name": "mAAI",
+            "label": "mAAI",
+            "order": 502,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 1,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1285,
+                "name": "An_I_mAAI",
+                "label": "An_I_mAAI",
+                "order": 0,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1286,
+                    "name": "mAAI_I_gr1",
+                    "label": "mAAI_I_gr1",
+                    "order": 0,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1287,
+                        "name": "mAAI_I_sgr1",
+                        "label": "mAAI_I_sgr1",
+                        "order": 0,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1237,
+            "name": "ISM",
+            "label": "ISM",
+            "order": 502,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 1,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1158,
+                "name": "An_I_ISM",
+                "label": "An_I_ISM",
+                "order": 0,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1058,
+                    "name": "ISM_11",
+                    "label": "ISM_11",
+                    "order": 0,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 913,
+                        "name": "ISM_11/1",
+                        "label": "ISM_11/1",
+                        "order": 3,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1159,
+                "name": "An_II_ISM",
+                "label": "An_II_ISM",
+                "order": 1,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1070,
+                    "name": "ISM_21",
+                    "label": "ISM_21",
+                    "order": 215,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 941,
+                        "name": "ISM_21/1",
+                        "label": "ISM_21/1",
+                        "order": 31,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1160,
+                "name": "An_III_ISM",
+                "label": "An_III_ISM",
+                "order": 2,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1071,
+                    "name": "ISM_31",
+                    "label": "ISM_31",
+                    "order": 216,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 943,
+                        "name": "ISM_31/1",
+                        "label": "ISM_31/1",
+                        "order": 33,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 944,
+                        "name": "ISM_31/2",
+                        "label": "ISM_31/2",
+                        "order": 34,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1161,
+                "name": "An_IV_ISM",
+                "label": "An_IV_ISM",
+                "order": 3,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1072,
+                    "name": "ISM_41",
+                    "label": "ISM_41",
+                    "order": 217,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 945,
+                        "name": "ISM_41/1",
+                        "label": "ISM_41/1",
+                        "order": 35,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 946,
+                        "name": "ISM_41/2",
+                        "label": "ISM_41/2",
+                        "order": 36,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1238,
+            "name": "mACS",
+            "label": "mACS",
+            "order": 503,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 1,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1162,
+                "name": "An_I_ACS",
+                "label": "An_I_ACS",
+                "order": 412,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1073,
+                    "name": "mACS_I_gr1",
+                    "label": "mACS_I_gr1",
+                    "order": 218,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 947,
+                        "name": "mACS_I_sgr1",
+                        "label": "mACS_I_sgr1",
+                        "order": 37,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1163,
+                "name": "An_II_ACS",
+                "label": "An_II_ACS",
+                "order": 413,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1074,
+                    "name": "mACS_II_gr1",
+                    "label": "mACS_II_gr1",
+                    "order": 219,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 948,
+                        "name": "mACS_II_sgr1",
+                        "label": "mACS_II_sgr1",
+                        "order": 38,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1239,
+            "name": "mES",
+            "label": "mES",
+            "order": 504,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 1,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1165,
+                "name": "An_II_ES",
+                "label": "An_II_ES",
+                "order": 415,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1076,
+                    "name": "mES_II_gr1",
+                    "label": "mES_II_gr1",
+                    "order": 221,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 950,
+                        "name": "mES_II_sgr1",
+                        "label": "mES_II_sgr1",
+                        "order": 40,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1240,
+            "name": "mICAI",
+            "label": "mICAI",
+            "order": 505,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 1,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1166,
+                "name": "An_I_ICAI",
+                "label": "An_I_ICAI",
+                "order": 416,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1077,
+                    "name": "mICAI_I_gr1",
+                    "label": "mICAI_I_gr1",
+                    "order": 222,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 951,
+                        "name": "mICAI_I_sgr1",
+                        "label": "mICAI_I_sgr1",
+                        "order": 41,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1167,
+                "name": "An_II_ICAI",
+                "label": "An_II_ICAI",
+                "order": 417,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1078,
+                    "name": "mICAI_II_gr1",
+                    "label": "mICAI_II_gr1",
+                    "order": 223,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 952,
+                        "name": "mICAI_II_sgr1",
+                        "label": "mICAI_II_sgr1",
+                        "order": 42,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1241,
+            "name": "EM",
+            "label": "EM",
+            "order": 506,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 1,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1168,
+                "name": "An_I_EM",
+                "label": "An_I_EM",
+                "order": 418,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1079,
+                    "name": "EM_11",
+                    "label": "EM_11",
+                    "order": 224,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 953,
+                        "name": "EM_11/1",
+                        "label": "EM_11/1",
+                        "order": 43,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 954,
+                        "name": "EM_11/2",
+                        "label": "EM_11/2",
+                        "order": 44,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1169,
+                "name": "An_II_EM",
+                "label": "An_II_EM",
+                "order": 419,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1080,
+                    "name": "EM_21",
+                    "label": "EM_21",
+                    "order": 225,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 955,
+                        "name": "EM_21/1",
+                        "label": "EM_21/1",
+                        "order": 45,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1170,
+                "name": "An_III_EM",
+                "label": "An_III_EM",
+                "order": 420,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1081,
+                    "name": "EM_31",
+                    "label": "EM_31",
+                    "order": 226,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 957,
+                        "name": "EM_31/1",
+                        "label": "EM_31/1",
+                        "order": 47,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 958,
+                        "name": "EM_31/2",
+                        "label": "EM_31/2",
+                        "order": 48,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1171,
+                "name": "An_IV_EM",
+                "label": "An_IV_EM",
+                "order": 421,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1082,
+                    "name": "EM_41",
+                    "label": "EM_41",
+                    "order": 227,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 959,
+                        "name": "EM_41/1",
+                        "label": "EM_41/1",
+                        "order": 49,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1288,
+            "name": "EA_Dual",
+            "label": "EA_Dual",
+            "order": 507,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 1,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1289,
+                "name": "An_I_EA_D",
+                "label": "An_I_EA_D",
+                "order": 0,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1290,
+                    "name": "EA_D_11",
+                    "label": "EA_D_11",
+                    "order": 0,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1291,
+                        "name": "EA_D_11/1",
+                        "label": "EA_D_11/1",
+                        "order": 0,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1242,
+            "name": "EA",
+            "label": "EA",
+            "order": 507,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 1,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1172,
+                "name": "An_I_EA",
+                "label": "An_I_EA",
+                "order": 422,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1083,
+                    "name": "EA_11",
+                    "label": "EA_11",
+                    "order": 228,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 960,
+                        "name": "EA_11/1",
+                        "label": "EA_11/1",
+                        "order": 50,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 961,
+                        "name": "EA_11/2",
+                        "label": "EA_11/2",
+                        "order": 51,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1173,
+                "name": "An_II_EA",
+                "label": "An_II_EA",
+                "order": 423,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1084,
+                    "name": "EA_21",
+                    "label": "EA_21",
+                    "order": 229,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 962,
+                        "name": "EA_21/1",
+                        "label": "EA_21/1",
+                        "order": 52,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 963,
+                        "name": "EA_21/2",
+                        "label": "EA_21/2",
+                        "order": 53,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1174,
+                "name": "An_III_EA",
+                "label": "An_III_EA",
+                "order": 424,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1085,
+                    "name": "EA_31",
+                    "label": "EA_31",
+                    "order": 230,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 964,
+                        "name": "EA_31/1",
+                        "label": "EA_31/1",
+                        "order": 54,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 965,
+                        "name": "EA_31/2",
+                        "label": "EA_31/2",
+                        "order": 55,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1175,
+                "name": "An_IV_EA",
+                "label": "An_IV_EA",
+                "order": 425,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1086,
+                    "name": "EA_41",
+                    "label": "EA_41",
+                    "order": 231,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 966,
+                        "name": "EA_41/1",
+                        "label": "EA_41/1",
+                        "order": 0,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 1296,
+                        "name": "EA_41/2",
+                        "label": "EA_41/2",
+                        "order": 1,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1243,
+            "name": "mAAIE",
+            "label": "mAAIE",
+            "order": 508,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 1,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1176,
+                "name": "An_I_AAIE",
+                "label": "An_I_AAIE",
+                "order": 426,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1087,
+                    "name": "mAAIE_I_gr1",
+                    "label": "mAAIE_I_gr1",
+                    "order": 232,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 967,
+                        "name": "mAAIE_I_sgr1",
+                        "label": "mAAIE_I_sgr1",
+                        "order": 57,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1177,
+                "name": "An_II_AAIE",
+                "label": "An_II_AAIE",
+                "order": 427,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 1,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1088,
+                    "name": "mAAIE_II_gr1",
+                    "label": "mAAIE_II_gr1",
+                    "order": 233,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 1,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 968,
+                        "name": "mAAIE_II_sgr1",
+                        "label": "mAAIE_II_sgr1",
+                        "order": 58,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 1,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "department": {
+        "id": 2,
+        "name": "Inginerie Industriala și Management",
+        "abbreviation": "IIM",
+        "directorId": "ebe11a39-4a4c-4f5a-98e9-de4983ad3058",
+        "isVisible": true
+      },
+      "children": [
+        {
+          "studyFormation": {
+            "id": 1244,
+            "name": "TCM",
+            "label": "TCM",
+            "order": 509,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 2,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1178,
+                "name": "An_I_TCM",
+                "label": "An_I_TCM",
+                "order": 428,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 2,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1089,
+                    "name": "TCM_11",
+                    "label": "TCM_11",
+                    "order": 234,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 969,
+                        "name": "TCM_11/1",
+                        "label": "TCM_11/1",
+                        "order": 0,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 970,
+                        "name": "TCM_11/2",
+                        "label": "TCM_11/2",
+                        "order": 1,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 1297,
+                        "name": "TCM_11/3",
+                        "label": "TCM_11/3",
+                        "order": 2,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1179,
+                "name": "An_II_TCM",
+                "label": "An_II_TCM",
+                "order": 429,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 2,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1090,
+                    "name": "TCM_21",
+                    "label": "TCM_21",
+                    "order": 235,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 971,
+                        "name": "TCM_21/1",
+                        "label": "TCM_21/1",
+                        "order": 61,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 972,
+                        "name": "TCM_21/2",
+                        "label": "TCM_21/2",
+                        "order": 62,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1180,
+                "name": "An_III_TCM",
+                "label": "An_III_TCM",
+                "order": 430,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 2,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1092,
+                    "name": "TCM_31",
+                    "label": "TCM_31",
+                    "order": 237,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 975,
+                        "name": "TCM_31/1",
+                        "label": "TCM_31/1",
+                        "order": 65,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 976,
+                        "name": "TCM_31/2",
+                        "label": "TCM_31/2",
+                        "order": 66,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 977,
+                        "name": "TCM_31/3",
+                        "label": "TCM_31/3",
+                        "order": 67,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1181,
+                "name": "An_IV_TCM",
+                "label": "An_IV_TCM",
+                "order": 431,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 2,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1093,
+                    "name": "TCM_41",
+                    "label": "TCM_41",
+                    "order": 238,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 978,
+                        "name": "TCM_41/1",
+                        "label": "TCM_41/1",
+                        "order": 0,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 979,
+                        "name": "TCM_41/2",
+                        "label": "TCM_41/2",
+                        "order": 1,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 1298,
+                        "name": "TCM_41/3",
+                        "label": "TCM_41/3",
+                        "order": 2,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1245,
+            "name": "IEDM",
+            "label": "IEDM",
+            "order": 510,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 2,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1182,
+                "name": "An_I_IEDM",
+                "label": "An_I_IEDM",
+                "order": 432,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 2,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1094,
+                    "name": "IEDM_11",
+                    "label": "IEDM_11",
+                    "order": 239,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 980,
+                        "name": "IEDM_11/1",
+                        "label": "IEDM_11/1",
+                        "order": 70,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 981,
+                        "name": "IEDM_11/2",
+                        "label": "IEDM_11/2",
+                        "order": 71,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "studyFormation": {
+                    "id": 1095,
+                    "name": "IEDM_12",
+                    "label": "IEDM_12",
+                    "order": 240,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 982,
+                        "name": "IEDM_12/1",
+                        "label": "IEDM_12/1",
+                        "order": 72,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1183,
+                "name": "An_II_IEDM",
+                "label": "An_II_IEDM",
+                "order": 433,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 2,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1096,
+                    "name": "IEDM_21",
+                    "label": "IEDM_21",
+                    "order": 0,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 983,
+                        "name": "IEDM_21/1",
+                        "label": "IEDM_21/1",
+                        "order": 74,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 984,
+                        "name": "IEDM_21/2",
+                        "label": "IEDM_21/2",
+                        "order": 75,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "studyFormation": {
+                    "id": 1299,
+                    "name": "IEDM_22",
+                    "label": "IEDM_22",
+                    "order": 1,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1300,
+                        "name": "IEDM_22/1",
+                        "label": "IEDM_22/1",
+                        "order": 0,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1184,
+                "name": "An_III_IEDM",
+                "label": "An_III_IEDM",
+                "order": 434,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 2,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1097,
+                    "name": "IEDM_31",
+                    "label": "IEDM_31",
+                    "order": 242,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 986,
+                        "name": "IEDM_31/1",
+                        "label": "IEDM_31/1",
+                        "order": 77,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 987,
+                        "name": "IEDM_31/2",
+                        "label": "IEDM_31/2",
+                        "order": 78,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 988,
+                        "name": "IEDM_31/3",
+                        "label": "IEDM_31/3",
+                        "order": 79,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1185,
+                "name": "An_IV_IEDM",
+                "label": "An_IV_IEDM",
+                "order": 435,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 2,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1098,
+                    "name": "IEDM_41",
+                    "label": "IEDM_41",
+                    "order": 243,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 989,
+                        "name": "IEDM_41/1",
+                        "label": "IEDM_41/1",
+                        "order": 0,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 990,
+                        "name": "IEDM_41/2",
+                        "label": "IEDM_41/2",
+                        "order": 1,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 1301,
+                        "name": "IEDM_41/3",
+                        "label": "IEDM_41/3",
+                        "order": 2,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1246,
+            "name": "ITT",
+            "label": "ITT",
+            "order": 511,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 2,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1186,
+                "name": "An_I_ITT",
+                "label": "An_I_ITT",
+                "order": 436,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 2,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1099,
+                    "name": "ITT_11",
+                    "label": "ITT_11",
+                    "order": 244,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 991,
+                        "name": "ITT_11/1",
+                        "label": "ITT_11/1",
+                        "order": 0,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 1302,
+                        "name": "ITT_11/2",
+                        "label": "ITT_11/2",
+                        "order": 1,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1187,
+                "name": "An_II_ITT",
+                "label": "An_II_ITT",
+                "order": 437,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 2,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1100,
+                    "name": "ITT_21",
+                    "label": "ITT_21",
+                    "order": 245,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 992,
+                        "name": "ITT_21/1",
+                        "label": "ITT_21/1",
+                        "order": 83,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1188,
+                "name": "An_III_ITT",
+                "label": "An_III_ITT",
+                "order": 438,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 2,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1101,
+                    "name": "ITT_31",
+                    "label": "ITT_31",
+                    "order": 246,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 994,
+                        "name": "ITT_31/1",
+                        "label": "ITT_31/1",
+                        "order": 85,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 995,
+                        "name": "ITT_31/2",
+                        "label": "ITT_31/2",
+                        "order": 86,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1189,
+                "name": "An_IV_ITT",
+                "label": "An_IV_ITT",
+                "order": 439,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 2,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1102,
+                    "name": "ITT_41",
+                    "label": "ITT_41",
+                    "order": 247,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 996,
+                        "name": "ITT_41/1",
+                        "label": "ITT_41/1",
+                        "order": 0,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 1303,
+                        "name": "ITT_41/2",
+                        "label": "ITT_41/2",
+                        "order": 1,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1247,
+            "name": "TDDH",
+            "label": "TDDH",
+            "order": 512,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 2,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1190,
+                "name": "An_I_TDDH",
+                "label": "An_I_TDDH",
+                "order": 440,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 2,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1103,
+                    "name": "TDDH_11",
+                    "label": "TDDH_11",
+                    "order": 248,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 997,
+                        "name": "TDDH_11/1",
+                        "label": "TDDH_11/1",
+                        "order": 0,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 1304,
+                        "name": "TDDH_11/2",
+                        "label": "TDDH_11/2",
+                        "order": 1,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1191,
+                "name": "An_II_TDDH",
+                "label": "An_II_TDDH",
+                "order": 441,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 2,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1104,
+                    "name": "TDDH_21",
+                    "label": "TDDH_21",
+                    "order": 249,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 998,
+                        "name": "TDDH_21/1",
+                        "label": "TDDH_21/1",
+                        "order": 89,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1192,
+                "name": "An_III_TDDH",
+                "label": "An_III_TDDH",
+                "order": 442,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 2,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1105,
+                    "name": "TDDH_31",
+                    "label": "TDDH_31",
+                    "order": 250,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1000,
+                        "name": "TDDH_31/1",
+                        "label": "TDDH_31/1",
+                        "order": 0,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 1305,
+                        "name": "TDDH_31/2",
+                        "label": "TDDH_31/2",
+                        "order": 1,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1193,
+                "name": "An_IV_TDDH",
+                "label": "An_IV_TDDH",
+                "order": 443,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 2,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1106,
+                    "name": "TDDH_41",
+                    "label": "TDDH_41",
+                    "order": 251,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1001,
+                        "name": "TDDH_41/1",
+                        "label": "TDDH_41/1",
+                        "order": 92,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1248,
+            "name": "IPMI",
+            "label": "IPMI",
+            "order": 513,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 2,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1195,
+                "name": "An_IV_IPMI",
+                "label": "An_IV_IPMI",
+                "order": 445,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 2,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1108,
+                    "name": "IPMI_41",
+                    "label": "IPMI_41",
+                    "order": 253,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1003,
+                        "name": "IPMI_41/1",
+                        "label": "IPMI_41/1",
+                        "order": 94,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1249,
+            "name": "mLI",
+            "label": "mLI",
+            "order": 514,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 2,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1196,
+                "name": "An_I_LI",
+                "label": "An_I_LI",
+                "order": 446,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 2,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1109,
+                    "name": "mLI_I_gr1",
+                    "label": "mLI_I_gr1",
+                    "order": 254,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1004,
+                        "name": "mLI_11",
+                        "label": "mLI_11",
+                        "order": 95,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1197,
+                "name": "An_II_LI",
+                "label": "An_II_LI",
+                "order": 447,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 2,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1110,
+                    "name": "mLI_II_gr1",
+                    "label": "mLI_II_gr1",
+                    "order": 255,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1005,
+                        "name": "mLI_21",
+                        "label": "mLI_21",
+                        "order": 96,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1250,
+            "name": "mSTIF",
+            "label": "mSTIF",
+            "order": 515,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 2,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1199,
+                "name": "An_II_STIF",
+                "label": "An_II_STIF",
+                "order": 449,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 2,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1112,
+                    "name": "mSTIF_II_gr1",
+                    "label": "mSTIF_II_gr1",
+                    "order": 257,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1007,
+                        "name": "mSTIF_21",
+                        "label": "mSTIF_21",
+                        "order": 98,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1251,
+            "name": "mMAI",
+            "label": "mMAI",
+            "order": 516,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 2,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1200,
+                "name": "An_I_MAI",
+                "label": "An_I_MAI",
+                "order": 450,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 2,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1113,
+                    "name": "mMAI_I_gr1",
+                    "label": "mMAI_I_gr1",
+                    "order": 258,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1008,
+                        "name": "mMAI_11",
+                        "label": "mMAI_11",
+                        "order": 99,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1201,
+                "name": "An_II_MAI",
+                "label": "An_II_MAI",
+                "order": 451,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 2,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1114,
+                    "name": "mMAI_II_gr1",
+                    "label": "mMAI_II_gr1",
+                    "order": 259,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1009,
+                        "name": "mMAI_21",
+                        "label": "mMAI_21",
+                        "order": 100,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1252,
+            "name": "mMC",
+            "label": "mMC",
+            "order": 517,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 2,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1202,
+                "name": "An_I_MC",
+                "label": "An_I_MC",
+                "order": 452,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 2,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1115,
+                    "name": "mMC_I_gr1",
+                    "label": "mMC_I_gr1",
+                    "order": 260,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1010,
+                        "name": "mMC_11",
+                        "label": "mMC_11",
+                        "order": 101,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1203,
+                "name": "An_II_MC",
+                "label": "An_II_MC",
+                "order": 453,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 2,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1116,
+                    "name": "mMC_II_gr1",
+                    "label": "mMC_II_gr1",
+                    "order": 261,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1011,
+                        "name": "mMC_21",
+                        "label": "mMC_21",
+                        "order": 102,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1253,
+            "name": "mMP",
+            "label": "mMP",
+            "order": 518,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 2,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1204,
+                "name": "An_I_MP",
+                "label": "An_I_MP",
+                "order": 454,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 2,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1117,
+                    "name": "mMP_I_gr1",
+                    "label": "mMP_I_gr1",
+                    "order": 262,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1012,
+                        "name": "mMP_11",
+                        "label": "mMP_11",
+                        "order": 103,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1205,
+                "name": "An_II_MP",
+                "label": "An_II_MP",
+                "order": 455,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 2,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1118,
+                    "name": "mMP_II_gr1",
+                    "label": "mMP_II_gr1",
+                    "order": 263,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1013,
+                        "name": "mMP_21",
+                        "label": "mMP_21",
+                        "order": 104,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1254,
+            "name": "mIMGN",
+            "label": "mIMGN",
+            "order": 519,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 2,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1206,
+                "name": "An_I_IMGN",
+                "label": "An_I_IMGN",
+                "order": 456,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 2,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1119,
+                    "name": "mIMGN_I_gr1",
+                    "label": "mIMGN_I_gr1",
+                    "order": 264,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1014,
+                        "name": "mIMGN_11",
+                        "label": "mIMGN_11",
+                        "order": 105,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1207,
+                "name": "An_II_IMGN",
+                "label": "An_II_IMGN",
+                "order": 457,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 2,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1120,
+                    "name": "mIMGN_II_gr1",
+                    "label": "mIMGN_II_gr1",
+                    "order": 265,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 2,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1015,
+                        "name": "mIMGN_21",
+                        "label": "mIMGN_21",
+                        "order": 106,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 2,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "department": {
+        "id": 3,
+        "name": "Mașini și Echipamente Industriale",
+        "abbreviation": "MEI",
+        "directorId": "82880c60-d61d-4b92-b6c1-44859b40d536",
+        "isVisible": true
+      },
+      "children": [
+        {
+          "studyFormation": {
+            "id": 1255,
+            "name": "SPD",
+            "label": "SPD",
+            "order": 520,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 3,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1208,
+                "name": "An_I_SPD",
+                "label": "An_I_SPD",
+                "order": 458,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1121,
+                    "name": "SPD_11",
+                    "label": "SPD_11",
+                    "order": 266,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1016,
+                        "name": "SPD_11/1",
+                        "label": "SPD_11/1",
+                        "order": 107,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1209,
+                "name": "An_II_SPD",
+                "label": "An_II_SPD",
+                "order": 459,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1122,
+                    "name": "SPD_21",
+                    "label": "SPD_21",
+                    "order": 267,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1017,
+                        "name": "SPD_21/1",
+                        "label": "SPD_21/1",
+                        "order": 108,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1210,
+                "name": "An_III_SPD",
+                "label": "An_III_SPD",
+                "order": 460,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1123,
+                    "name": "SPD_31",
+                    "label": "SPD_31",
+                    "order": 268,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1019,
+                        "name": "SPD_31/1",
+                        "label": "SPD_31/1",
+                        "order": 0,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 1306,
+                        "name": "SPD_31/2",
+                        "label": "SPD_31/2",
+                        "order": 1,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1211,
+                "name": "An_IV_SPD",
+                "label": "An_IV_SPD",
+                "order": 461,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1124,
+                    "name": "SPD_41",
+                    "label": "SPD_41",
+                    "order": 269,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1020,
+                        "name": "SPD_41/1",
+                        "label": "SPD_41/1",
+                        "order": 111,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1256,
+            "name": "Mec",
+            "label": "Mec",
+            "order": 521,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 3,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1212,
+                "name": "An_I_MEC",
+                "label": "An_I_MEC",
+                "order": 462,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1125,
+                    "name": "MEC_11",
+                    "label": "MEC_11",
+                    "order": 270,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1021,
+                        "name": "MEC_11/1",
+                        "label": "MEC_11/1",
+                        "order": 112,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 1022,
+                        "name": "MEC_11/2",
+                        "label": "MEC_11/2",
+                        "order": 113,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "studyFormation": {
+                    "id": 1126,
+                    "name": "MEC_12",
+                    "label": "MEC_12",
+                    "order": 271,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1023,
+                        "name": "MEC_12/1",
+                        "label": "MEC_12/1",
+                        "order": 0,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 1307,
+                        "name": "MEC_12/2",
+                        "label": "MEC_12/2",
+                        "order": 1,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1213,
+                "name": "An_II_MEC",
+                "label": "An_II_MEC",
+                "order": 463,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1127,
+                    "name": "MEC_21",
+                    "label": "MEC_21",
+                    "order": 272,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1024,
+                        "name": "MEC_21/1",
+                        "label": "MEC_21/1",
+                        "order": 115,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 1025,
+                        "name": "MEC_21/2",
+                        "label": "MEC_21/2",
+                        "order": 116,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1214,
+                "name": "An_III_MEC",
+                "label": "An_III_MEC",
+                "order": 464,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1129,
+                    "name": "MEC_31",
+                    "label": "MEC_31",
+                    "order": 274,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1027,
+                        "name": "MEC_31/1",
+                        "label": "MEC_31/1",
+                        "order": 118,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 1028,
+                        "name": "MEC_31/2",
+                        "label": "MEC_31/2",
+                        "order": 119,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 1029,
+                        "name": "MEC_31/3",
+                        "label": "MEC_31/3",
+                        "order": 120,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1215,
+                "name": "An_IV_MEC",
+                "label": "An_IV_MEC",
+                "order": 465,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1130,
+                    "name": "MEC_41",
+                    "label": "MEC_41",
+                    "order": 275,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1030,
+                        "name": "MEC_41/1",
+                        "label": "MEC_41/1",
+                        "order": 121,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 1031,
+                        "name": "MEC_41/2",
+                        "label": "MEC_41/2",
+                        "order": 122,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 1032,
+                        "name": "MEC_41/3",
+                        "label": "MEC_41/3",
+                        "order": 123,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1257,
+            "name": "Mec Dual",
+            "label": "Mec Dual",
+            "order": 522,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 3,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1216,
+                "name": "An_I_MEC_D",
+                "label": "An_I_MEC_D",
+                "order": 0,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1131,
+                    "name": "MEC_D_11",
+                    "label": "MEC_D_11",
+                    "order": 276,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1033,
+                        "name": "MEC_D_11/1",
+                        "label": "MEC_D_11/1",
+                        "order": 124,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1308,
+                "name": "An_II_MED_D",
+                "label": "An_II_MED_D",
+                "order": 1,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1309,
+                    "name": "MEC_D_21",
+                    "label": "MEC_D_21",
+                    "order": 0,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1310,
+                        "name": "MEC_D_21/1",
+                        "label": "MEC_D_21/1",
+                        "order": 0,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1258,
+            "name": "Mec En",
+            "label": "Mec En",
+            "order": 523,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 3,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1217,
+                "name": "An_I_MEC_En",
+                "label": "An_I_MEC_En",
+                "order": 467,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1132,
+                    "name": "MECEn_11",
+                    "label": "MECEn_11",
+                    "order": 277,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1034,
+                        "name": "MECEn_11/1",
+                        "label": "MECEn_11/1",
+                        "order": 0,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 1311,
+                        "name": "MECEn_11/2",
+                        "label": "MECEn_11/2",
+                        "order": 1,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1218,
+                "name": "An_II_MEC_En",
+                "label": "An_II_MEC_En",
+                "order": 468,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1133,
+                    "name": "MECEn_21",
+                    "label": "MECEn_21",
+                    "order": 278,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1035,
+                        "name": "MECEn_21/1",
+                        "label": "MECEn_21/1",
+                        "order": 126,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1219,
+                "name": "An_III_MEC_En",
+                "label": "An_III_MEC_En",
+                "order": 469,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1134,
+                    "name": "MECEn_31",
+                    "label": "MECEn_31",
+                    "order": 279,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1036,
+                        "name": "MECEn_31/1",
+                        "label": "MECEn_31/1",
+                        "order": 127,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1220,
+                "name": "An_IV_MEC_En",
+                "label": "An_IV_MEC_En",
+                "order": 470,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1135,
+                    "name": "MECEn_41",
+                    "label": "MECEn_41",
+                    "order": 280,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1037,
+                        "name": "MECEn_41/1",
+                        "label": "MECEn_41/1",
+                        "order": 128,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1314,
+            "name": "Robo_D",
+            "label": "Robo_D",
+            "order": 524,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 3,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1315,
+                "name": "An_I_RO_D",
+                "label": "An_I_RO_D",
+                "order": 0,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1316,
+                    "name": "RO_D_11",
+                    "label": "RO_D_11",
+                    "order": 0,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1317,
+                        "name": "RO_D_11/1",
+                        "label": "RO_D_11/1",
+                        "order": 0,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1259,
+            "name": "Robo",
+            "label": "Robo",
+            "order": 524,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 3,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1221,
+                "name": "An_I_RO",
+                "label": "An_I_RO",
+                "order": 471,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1136,
+                    "name": "RO_11",
+                    "label": "RO_11",
+                    "order": 281,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1038,
+                        "name": "RO_11/1",
+                        "label": "RO_11/1",
+                        "order": 129,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 1039,
+                        "name": "RO_11/2",
+                        "label": "RO_11/2",
+                        "order": 130,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1222,
+                "name": "An_II_RO",
+                "label": "An_II_RO",
+                "order": 472,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1137,
+                    "name": "RO_21",
+                    "label": "RO_21",
+                    "order": 282,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1040,
+                        "name": "RO_21/1",
+                        "label": "RO_21/1",
+                        "order": 131,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 1041,
+                        "name": "RO_21/2",
+                        "label": "RO_21/2",
+                        "order": 132,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1223,
+                "name": "An_III_RO",
+                "label": "An_III_RO",
+                "order": 473,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1138,
+                    "name": "RO_31",
+                    "label": "RO_31",
+                    "order": 283,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1042,
+                        "name": "RO_31/1",
+                        "label": "RO_31/1",
+                        "order": 0,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 1043,
+                        "name": "RO_31/2",
+                        "label": "RO_31/2",
+                        "order": 1,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 1312,
+                        "name": "RO_31/3",
+                        "label": "RO_31/3",
+                        "order": 2,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1224,
+                "name": "An_IV_RO",
+                "label": "An_IV_RO",
+                "order": 474,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1139,
+                    "name": "RO_41",
+                    "label": "RO_41",
+                    "order": 284,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1044,
+                        "name": "RO_41/1",
+                        "label": "RO_41/1",
+                        "order": 0,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 1313,
+                        "name": "RO_41/2",
+                        "label": "RO_41/2",
+                        "order": 1,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1260,
+            "name": "IEI",
+            "label": "IEI",
+            "order": 525,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 3,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1225,
+                "name": "An_I_IEI",
+                "label": "An_I_IEI",
+                "order": 475,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1140,
+                    "name": "IEI_11",
+                    "label": "IEI_11",
+                    "order": 285,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1045,
+                        "name": "IEI_11/1",
+                        "label": "IEI_11/1",
+                        "order": 137,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 1046,
+                        "name": "IEI_11/2",
+                        "label": "IEI_11/2",
+                        "order": 138,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1226,
+                "name": "An_II_IEI",
+                "label": "An_II_IEI",
+                "order": 476,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1141,
+                    "name": "IEI_21",
+                    "label": "IEI_21",
+                    "order": 286,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1047,
+                        "name": "IEI_21/1",
+                        "label": "IEI_21/1",
+                        "order": 139,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 1048,
+                        "name": "IEI_21/2",
+                        "label": "IEI_21/2",
+                        "order": 140,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1227,
+                "name": "An_III_IEI",
+                "label": "An_III_IEI",
+                "order": 477,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1142,
+                    "name": "IEI_31",
+                    "label": "IEI_31",
+                    "order": 287,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1050,
+                        "name": "IEI_31/1",
+                        "label": "IEI_31/1",
+                        "order": 0,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "studyFormation": {
+                        "id": 1318,
+                        "name": "IEI_31/2",
+                        "label": "IEI_31/2",
+                        "order": 1,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1228,
+                "name": "An_IV_IEI",
+                "label": "An_IV_IEI",
+                "order": 478,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1143,
+                    "name": "IEI_41",
+                    "label": "IEI_41",
+                    "order": 288,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1051,
+                        "name": "IEI_41/1",
+                        "label": "IEI_41/1",
+                        "order": 143,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1261,
+            "name": "mSCCC",
+            "label": "mSCCC",
+            "order": 526,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 3,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1229,
+                "name": "An_I_SCCC",
+                "label": "An_I_SCCC",
+                "order": 479,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1144,
+                    "name": "mSCCC_I_gr1",
+                    "label": "mSCCC_I_gr1",
+                    "order": 289,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1052,
+                        "name": "mSCCC_11",
+                        "label": "mSCCC_11",
+                        "order": 144,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1230,
+                "name": "An_II_SCCC",
+                "label": "An_II_SCCC",
+                "order": 480,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1145,
+                    "name": "mSCCC_II_gr1",
+                    "label": "mSCCC_II_gr1",
+                    "order": 290,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1053,
+                        "name": "mSCCC_21",
+                        "label": "mSCCC_21",
+                        "order": 145,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1262,
+            "name": "mSMA",
+            "label": "mSMA",
+            "order": 527,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 3,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1231,
+                "name": "An_I_SMA",
+                "label": "An_I_SMA",
+                "order": 481,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1146,
+                    "name": "mSMA_I_gr1",
+                    "label": "mSMA_I_gr1",
+                    "order": 291,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1054,
+                        "name": "mSMA_11",
+                        "label": "mSMA_11",
+                        "order": 146,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1232,
+                "name": "An_II_SMA",
+                "label": "An_II_SMA",
+                "order": 482,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1147,
+                    "name": "mSMA_II_gr1",
+                    "label": "mSMA_II_gr1",
+                    "order": 292,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1055,
+                        "name": "mSMA_21",
+                        "label": "mSMA_21",
+                        "order": 147,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "studyFormation": {
+            "id": 1263,
+            "name": "mSMA Dual",
+            "label": "mSMA Dual",
+            "order": 528,
+            "level": 3,
+            "parentId": null,
+            "departmentId": 3,
+            "specializationTypeId": null
+          },
+          "children": [
+            {
+              "studyFormation": {
+                "id": 1233,
+                "name": "An_I_SMA_D",
+                "label": "An_I_SMA_D",
+                "order": 0,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1148,
+                    "name": "mSMA_D_I_gr1",
+                    "label": "mSMA_D_I_gr1",
+                    "order": 293,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1056,
+                        "name": "mSMA_D_11",
+                        "label": "mSMA_D_11",
+                        "order": 148,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "studyFormation": {
+                "id": 1234,
+                "name": "An_II_SMA_D",
+                "label": "An_II_SMA_D",
+                "order": 1,
+                "level": 2,
+                "parentId": null,
+                "departmentId": 3,
+                "specializationTypeId": null
+              },
+              "children": [
+                {
+                  "studyFormation": {
+                    "id": 1149,
+                    "name": "mSMA_D_II_gr1",
+                    "label": "mSMA_D_II_gr1",
+                    "order": 0,
+                    "level": 1,
+                    "parentId": null,
+                    "departmentId": 3,
+                    "specializationTypeId": null
+                  },
+                  "children": [
+                    {
+                      "studyFormation": {
+                        "id": 1319,
+                        "name": "mSMA_D_21",
+                        "label": "mSMA_D_21",
+                        "order": 0,
+                        "level": 0,
+                        "parentId": null,
+                        "departmentId": 3,
+                        "specializationTypeId": null
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "department": {
+        "id": 4,
+        "name": "IOSUD",
+        "abbreviation": "IOSUD",
+        "directorId": null,
+        "isVisible": false
+      },
+      "children": []
+    },
+    {
+      "department": {
+        "id": 5,
+        "name": "Cadre didactice externe",
+        "abbreviation": "EXT",
+        "directorId": null,
+        "isVisible": false
+      },
+      "children": []
+    }
+  ]
+}

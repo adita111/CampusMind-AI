@@ -8,8 +8,8 @@ from models.room_state import RoomState
 
 DATA_DIRECTORY = Path(__file__).resolve().parent.parent / "data"
 
-ROOMS_FILE = DATA_DIRECTORY / "rooms.json"
-STATES_FILE = DATA_DIRECTORY / "room_states.json"
+ROOMS_FILE = DATA_DIRECTORY / "generated/rooms.json"
+STATES_FILE = DATA_DIRECTORY / "generated/room_states.json"
 
 
 def get_all_rooms() -> list[Room]:

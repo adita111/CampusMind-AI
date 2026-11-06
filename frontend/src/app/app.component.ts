@@ -12,7 +12,10 @@ import {
   ScheduledActivity,
   OptimizationResult,
   EnergyComparison,
+  UlbsActivity,
+  WeekParity
 } from './services/campus.service';
+
 
 @Component({
   selector: 'app-root',
@@ -27,6 +30,16 @@ export class AppComponent implements OnInit, OnDestroy {
   private platformId = inject(PLATFORM_ID);
   private temperatureTimer?: Subscription;
   private temperatureRequestInProgress = false;
+
+  ulbsRooms: string[] = [];
+  ulbsActivities: UlbsActivity[] = [];
+  selectedUlbsRoom = '';
+  selectedUlbsWeekday = 0;
+  selectedUlbsParity: WeekParity = 'all';
+  ulbsLoading = false;
+  ulbsError = '';
+
+  showOptimizationResults = false;
 
   buildings: Building[] = [];
   floors: Floor[] = [];
@@ -52,12 +65,15 @@ energyError = '';
 
 outsideTemperature = -3;
 simulationWeekday = 0;
+selectedEnergyRoom = '';
+energyWeekParity: 'odd' | 'even' = 'odd';
 
-selectedEnergyRoom = 'IE101';
+showEnergyHistory = false;
 
   
 ngOnInit(): void {
   this.loadBuildings();
+  this.loadUlbsRooms();
 
   // Run polling only in the browser
   if (isPlatformBrowser(this.platformId)) {
@@ -209,21 +225,38 @@ runOptimization(): void {
       console.error('Optimization error:', error);
     }
   });
+  this.showOptimizationResults = true;
 }
+
 
 
 runEnergySimulation(): void {
   this.energyLoading = true;
   this.energyError = '';
   this.energyResult = null;
+  this.showEnergyHistory = false;
 
   this.campusService.compareEnergy(
     this.outsideTemperature,
-    this.simulationWeekday
+    this.simulationWeekday,
+    this.energyWeekParity
   ).subscribe({
     next: (result) => {
       this.energyResult = result;
       this.energyLoading = false;
+
+      // Select the first existing room if the current
+      // selection is no longer valid.
+      const roomExists = this.rooms.some(
+        room => room.id === this.selectedEnergyRoom
+      );
+
+      if (!roomExists) {
+        this.selectedEnergyRoom =
+          this.rooms.length > 0
+            ? this.rooms[0].id
+            : '';
+      }
     },
     error: (error) => {
       this.energyLoading = false;
@@ -233,6 +266,9 @@ runEnergySimulation(): void {
   });
 }
 
+toggleEnergyHistory(): void {
+  this.showEnergyHistory = !this.showEnergyHistory;
+}
 
 getHeatingBarWidth(value: number): number {
   if (!this.energyResult) {
@@ -308,6 +344,93 @@ refreshTemperature(): void {
       this.temperatureRequestInProgress = false;
     }
   });
+}
+
+
+loadUlbsRooms(): void {
+  this.ulbsError = '';
+
+  this.campusService.getUlbsRooms().subscribe({
+    next: (rooms) => {
+      this.ulbsRooms = rooms;
+
+      if (rooms.length === 0) {
+        this.selectedUlbsRoom = '';
+        this.ulbsActivities = [];
+        return;
+      }
+
+      if (!rooms.includes(this.selectedUlbsRoom)) {
+        this.selectedUlbsRoom = rooms[0];
+      }
+
+      this.loadUlbsSchedule();
+    },
+    error: (error) => {
+      console.error('ULBS rooms error:', error);
+      this.ulbsError = 'Could not load ULBS rooms';
+    }
+  });
+}
+
+loadUlbsSchedule(): void {
+  if (!this.selectedUlbsRoom) {
+    this.ulbsActivities = [];
+    return;
+  }
+
+  this.ulbsLoading = true;
+  this.ulbsError = '';
+
+  const roomId = this.selectedUlbsRoom;
+  const weekday = this.selectedUlbsWeekday;
+  const parity = this.selectedUlbsParity;
+
+  this.campusService.getUlbsSchedule(
+    roomId,
+    weekday,
+    parity
+  ).subscribe({
+    next: (activities) => {
+      // Ignore responses from an old selection.
+      if (
+        this.selectedUlbsRoom !== roomId ||
+        this.selectedUlbsWeekday !== weekday ||
+        this.selectedUlbsParity !== parity
+      ) {
+        return;
+      }
+
+      this.ulbsActivities = activities;
+      this.ulbsLoading = false;
+    },
+    error: (error) => {
+      if (
+        this.selectedUlbsRoom !== roomId ||
+        this.selectedUlbsWeekday !== weekday ||
+        this.selectedUlbsParity !== parity
+      ) {
+        return;
+      }
+
+      console.error('ULBS schedule error:', error);
+      this.ulbsError = 'Could not load ULBS schedule';
+      this.ulbsLoading = false;
+    }
+  });
+}
+
+toggleOptimization(): void {
+  if (this.showOptimizationResults) {
+    this.showOptimizationResults = false;
+    return;
+  }
+
+  this.showOptimizationResults = true;
+
+  if (!this.optimizationResult) {
+    this.runOptimization();
+  }
 }
 
 

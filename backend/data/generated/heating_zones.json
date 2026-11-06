@@ -1,0 +1,296 @@
+[
+  {
+    "id": "A_F0_ZONE_1",
+    "building_id": "A",
+    "floor_id": "A_F0",
+    "room_ids": [
+      "A0"
+    ],
+    "heating_enabled": false,
+    "target_temperature": 21.0
+  },
+  {
+    "id": "B_F0_ZONE_1",
+    "building_id": "B",
+    "floor_id": "B_F0",
+    "room_ids": [
+      "B001_Campus",
+      "B002",
+      "B002-Chimie",
+      "B003_Campus",
+      "B008_Campus"
+    ],
+    "heating_enabled": false,
+    "target_temperature": 21.0
+  },
+  {
+    "id": "B_F0_ZONE_2",
+    "building_id": "B",
+    "floor_id": "B_F0",
+    "room_ids": [
+      "B009-Fizica",
+      "B009_Campus",
+      "B013_Capus",
+      "B014_Campus",
+      "B015_Campus"
+    ],
+    "heating_enabled": false,
+    "target_temperature": 21.0
+  },
+  {
+    "id": "B_F0_ZONE_3",
+    "building_id": "B",
+    "floor_id": "B_F0",
+    "room_ids": [
+      "B1"
+    ],
+    "heating_enabled": false,
+    "target_temperature": 21.0
+  },
+  {
+    "id": "B_F1_ZONE_1",
+    "building_id": "B",
+    "floor_id": "B_F1",
+    "room_ids": [
+      "B101_Campus",
+      "B103_Campus",
+      "B104_Campus",
+      "B105_Campus",
+      "B110_Campus"
+    ],
+    "heating_enabled": false,
+    "target_temperature": 21.0
+  },
+  {
+    "id": "B_F1_ZONE_2",
+    "building_id": "B",
+    "floor_id": "B_F1",
+    "room_ids": [
+      "B111_Campus",
+      "B112_Campus",
+      "B115_Campus",
+      "B116_Campus",
+      "B117_Campus"
+    ],
+    "heating_enabled": false,
+    "target_temperature": 21.0
+  },
+  {
+    "id": "B_F3_ZONE_1",
+    "building_id": "B",
+    "floor_id": "B_F3",
+    "room_ids": [
+      "B300",
+      "B304-Fizica",
+      "B308_Ratiu"
+    ],
+    "heating_enabled": false,
+    "target_temperature": 21.0
+  },
+  {
+    "id": "B_F4_ZONE_1",
+    "building_id": "B",
+    "floor_id": "B_F4",
+    "room_ids": [
+      "B403"
+    ],
+    "heating_enabled": false,
+    "target_temperature": 21.0
+  },
+  {
+    "id": "C_F0_ZONE_1",
+    "building_id": "C",
+    "floor_id": "C_F0",
+    "room_ids": [
+      "C1"
+    ],
+    "heating_enabled": false,
+    "target_temperature": 21.0
+  },
+  {
+    "id": "D_F0_ZONE_1",
+    "building_id": "D",
+    "floor_id": "D_F0",
+    "room_ids": [
+      "D1",
+      "D2"
+    ],
+    "heating_enabled": false,
+    "target_temperature": 21.0
+  },
+  {
+    "id": "FLA_F0_ZONE_1",
+    "building_id": "FLA",
+    "floor_id": "FLA_F0",
+    "room_ids": [
+      "FLA1.16",
+      "FLA1.41",
+      "FLA1.62"
+    ],
+    "heating_enabled": false,
+    "target_temperature": 21.0
+  },
+  {
+    "id": "IE_F0_ZONE_1",
+    "building_id": "IE",
+    "floor_id": "IE_F0",
+    "room_ids": [
+      "IE002",
+      "IE003",
+      "IE004",
+      "IE005",
+      "IE006"
+    ],
+    "heating_enabled": false,
+    "target_temperature": 21.0
+  },
+  {
+    "id": "IE_F0_ZONE_2",
+    "building_id": "IE",
+    "floor_id": "IE_F0",
+    "room_ids": [
+      "IE012",
+      "IE013"
+    ],
+    "heating_enabled": false,
+    "target_temperature": 21.0
+  },
+  {
+    "id": "IE_F1_ZONE_1",
+    "building_id": "IE",
+    "floor_id": "IE_F1",
+    "room_ids": [
+      "IE101",
+      "IE102",
+      "IE112",
+      "IE113"
+    ],
+    "heating_enabled": false,
+    "target_temperature": 21.0
+  },
+  {
+    "id": "IE_F2_ZONE_1",
+    "building_id": "IE",
+    "floor_id": "IE_F2",
+    "room_ids": [
+      "IE206"
+    ],
+    "heating_enabled": false,
+    "target_temperature": 21.0
+  },
+  {
+    "id": "IE_F3_ZONE_1",
+    "building_id": "IE",
+    "floor_id": "IE_F3",
+    "room_ids": [
+      "IE301",
+      "IE302",
+      "IE303",
+      "IE304",
+      "IE305"
+    ],
+    "heating_enabled": false,
+    "target_temperature": 21.0
+  },
+  {
+    "id": "L_F0_ZONE_1",
+    "building_id": "L",
+    "floor_id": "L_F0",
+    "room_ids": [
+      "L1A_Litere",
+      "L1B_Litere"
+    ],
+    "heating_enabled": false,
+    "target_temperature": 21.0
+  },
+  {
+    "id": "M_F5_ZONE_1",
+    "building_id": "M",
+    "floor_id": "M_F5",
+    "room_ids": [
+      "M505"
+    ],
+    "heating_enabled": false,
+    "target_temperature": 21.0
+  },
+  {
+    "id": "UNKNOWN_F0_ZONE_1",
+    "building_id": "UNKNOWN",
+    "floor_id": "UNKNOWN_F0",
+    "room_ids": [
+      "AUMOVIO_Aula",
+      "AUMOVIO_Lab1",
+      "AUMOVIO_Lab2",
+      "COMPA",
+      "Litere"
+    ],
+    "heating_enabled": false,
+    "target_temperature": 21.0
+  },
+  {
+    "id": "UNKNOWN_F0_ZONE_2",
+    "building_id": "UNKNOWN",
+    "floor_id": "UNKNOWN_F0",
+    "room_ids": [
+      "Medias_A0",
+      "Medias_A1",
+      "Medias_A2",
+      "Medias_S11",
+      "Medias_S21"
+    ],
+    "heating_enabled": false,
+    "target_temperature": 21.0
+  },
+  {
+    "id": "UNKNOWN_F0_ZONE_3",
+    "building_id": "UNKNOWN",
+    "floor_id": "UNKNOWN_F0",
+    "room_ids": [
+      "Medias_S22",
+      "Medias_S23",
+      "NTTDATA_Aula_Brukenthal",
+      "NTTDATA_Evolution",
+      "NTTDATA_Quest"
+    ],
+    "heating_enabled": false,
+    "target_temperature": 21.0
+  },
+  {
+    "id": "UNKNOWN_F0_ZONE_4",
+    "building_id": "UNKNOWN",
+    "floor_id": "UNKNOWN_F0",
+    "room_ids": [
+      "NTTDATA_Sensei",
+      "Sala - A12 - Corp A",
+      "Sala - A16 - Corp A",
+      "Sala - A17 - Corp A",
+      "Sala - A18 - Corp A"
+    ],
+    "heating_enabled": false,
+    "target_temperature": 21.0
+  },
+  {
+    "id": "UNKNOWN_F0_ZONE_5",
+    "building_id": "UNKNOWN",
+    "floor_id": "UNKNOWN_F0",
+    "room_ids": [
+      "Sala - A22 - Corp A",
+      "Sala - A25 - Corp A",
+      "Sala - A27 - Corp A",
+      "TRANSELECTRICA_S1",
+      "TRANSELECTRICA_S2"
+    ],
+    "heating_enabled": false,
+    "target_temperature": 21.0
+  },
+  {
+    "id": "UNKNOWN_F0_ZONE_6",
+    "building_id": "UNKNOWN",
+    "floor_id": "UNKNOWN_F0",
+    "room_ids": [
+      "Teren_sport_Campus"
+    ],
+    "heating_enabled": false,
+    "target_temperature": 21.0
+  }
+]

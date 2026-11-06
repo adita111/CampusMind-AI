@@ -332,3 +332,25 @@ header {
   }
 }
 
+.energy-history-table {
+  width: 100%;
+  overflow-x: visible;
+
+  table {
+    width: 100%;
+    table-layout: auto;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    padding: 12px 16px;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  th:first-child,
+  td:first-child {
+    text-align: left;
+  }
+}

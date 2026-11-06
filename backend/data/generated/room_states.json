@@ -1,0 +1,704 @@
+[
+  {
+    "room_id": "A0",
+    "current_temperature": 21.3,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "AUMOVIO_Aula",
+    "current_temperature": 21.8,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "AUMOVIO_Lab1",
+    "current_temperature": 18.9,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "AUMOVIO_Lab2",
+    "current_temperature": 19.8,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "B001_Campus",
+    "current_temperature": 20.7,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "B002",
+    "current_temperature": 18.4,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "B002-Chimie",
+    "current_temperature": 18.0,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "B003_Campus",
+    "current_temperature": 21.7,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "B008_Campus",
+    "current_temperature": 21.2,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "B009-Fizica",
+    "current_temperature": 19.0,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "B009_Campus",
+    "current_temperature": 20.6,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "B013_Capus",
+    "current_temperature": 19.4,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "B014_Campus",
+    "current_temperature": 22.0,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "B015_Campus",
+    "current_temperature": 18.5,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "B1",
+    "current_temperature": 18.5,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "B101_Campus",
+    "current_temperature": 20.8,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "B103_Campus",
+    "current_temperature": 20.2,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "B104_Campus",
+    "current_temperature": 21.6,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "B105_Campus",
+    "current_temperature": 19.4,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "B110_Campus",
+    "current_temperature": 21.7,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "B111_Campus",
+    "current_temperature": 20.6,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "B112_Campus",
+    "current_temperature": 21.0,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "B115_Campus",
+    "current_temperature": 20.6,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "B116_Campus",
+    "current_temperature": 20.8,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "B117_Campus",
+    "current_temperature": 21.4,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "B300",
+    "current_temperature": 20.8,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "B304-Fizica",
+    "current_temperature": 19.2,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "B308_Ratiu",
+    "current_temperature": 21.8,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "B403",
+    "current_temperature": 20.5,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "C1",
+    "current_temperature": 18.1,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "COMPA",
+    "current_temperature": 20.3,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "D1",
+    "current_temperature": 18.9,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "D2",
+    "current_temperature": 19.1,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "FLA1.16",
+    "current_temperature": 21.0,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "FLA1.41",
+    "current_temperature": 19.9,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "FLA1.62",
+    "current_temperature": 20.5,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "IE002",
+    "current_temperature": 20.7,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "IE003",
+    "current_temperature": 21.2,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "IE004",
+    "current_temperature": 19.3,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "IE005",
+    "current_temperature": 20.8,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "IE006",
+    "current_temperature": 20.7,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "IE012",
+    "current_temperature": 19.6,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "IE013",
+    "current_temperature": 19.9,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "IE101",
+    "current_temperature": 20.4,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "IE102",
+    "current_temperature": 21.6,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "IE112",
+    "current_temperature": 18.0,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "IE113",
+    "current_temperature": 19.7,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "IE206",
+    "current_temperature": 20.9,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "IE301",
+    "current_temperature": 18.9,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "IE302",
+    "current_temperature": 20.8,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "IE303",
+    "current_temperature": 18.0,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "IE304",
+    "current_temperature": 19.4,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "IE305",
+    "current_temperature": 19.5,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "L1A_Litere",
+    "current_temperature": 21.4,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "L1B_Litere",
+    "current_temperature": 21.4,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "Litere",
+    "current_temperature": 19.7,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "M505",
+    "current_temperature": 19.8,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "Medias_A0",
+    "current_temperature": 21.1,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "Medias_A1",
+    "current_temperature": 21.9,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "Medias_A2",
+    "current_temperature": 20.4,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "Medias_S11",
+    "current_temperature": 21.4,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "Medias_S21",
+    "current_temperature": 19.4,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "Medias_S22",
+    "current_temperature": 20.7,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "Medias_S23",
+    "current_temperature": 21.5,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "NTTDATA_Aula_Brukenthal",
+    "current_temperature": 20.2,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "NTTDATA_Evolution",
+    "current_temperature": 20.9,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "NTTDATA_Quest",
+    "current_temperature": 20.7,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "NTTDATA_Sensei",
+    "current_temperature": 18.4,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "Sala - A12 - Corp A",
+    "current_temperature": 18.9,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "Sala - A16 - Corp A",
+    "current_temperature": 18.8,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "Sala - A17 - Corp A",
+    "current_temperature": 21.1,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "Sala - A18 - Corp A",
+    "current_temperature": 21.7,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "Sala - A22 - Corp A",
+    "current_temperature": 19.0,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "Sala - A25 - Corp A",
+    "current_temperature": 21.1,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "Sala - A27 - Corp A",
+    "current_temperature": 20.5,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "TRANSELECTRICA_S1",
+    "current_temperature": 20.0,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "TRANSELECTRICA_S2",
+    "current_temperature": 20.4,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  },
+  {
+    "room_id": "Teren_sport_Campus",
+    "current_temperature": 21.3,
+    "target_temperature": 21.0,
+    "heating_on": false,
+    "lights_on": false,
+    "occupied": false,
+    "energy_consumed_kwh": 0.0
+  }
+]

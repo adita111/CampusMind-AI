@@ -1,0 +1,92 @@
+[
+  {
+    "id": "A_F0",
+    "building_id": "A",
+    "number": 0,
+    "name": "Floor 0"
+  },
+  {
+    "id": "B_F0",
+    "building_id": "B",
+    "number": 0,
+    "name": "Floor 0"
+  },
+  {
+    "id": "B_F1",
+    "building_id": "B",
+    "number": 1,
+    "name": "Floor 1"
+  },
+  {
+    "id": "B_F3",
+    "building_id": "B",
+    "number": 3,
+    "name": "Floor 3"
+  },
+  {
+    "id": "B_F4",
+    "building_id": "B",
+    "number": 4,
+    "name": "Floor 4"
+  },
+  {
+    "id": "C_F0",
+    "building_id": "C",
+    "number": 0,
+    "name": "Floor 0"
+  },
+  {
+    "id": "D_F0",
+    "building_id": "D",
+    "number": 0,
+    "name": "Floor 0"
+  },
+  {
+    "id": "FLA_F0",
+    "building_id": "FLA",
+    "number": 0,
+    "name": "Floor 0"
+  },
+  {
+    "id": "IE_F0",
+    "building_id": "IE",
+    "number": 0,
+    "name": "Floor 0"
+  },
+  {
+    "id": "IE_F1",
+    "building_id": "IE",
+    "number": 1,
+    "name": "Floor 1"
+  },
+  {
+    "id": "IE_F2",
+    "building_id": "IE",
+    "number": 2,
+    "name": "Floor 2"
+  },
+  {
+    "id": "IE_F3",
+    "building_id": "IE",
+    "number": 3,
+    "name": "Floor 3"
+  },
+  {
+    "id": "L_F0",
+    "building_id": "L",
+    "number": 0,
+    "name": "Floor 0"
+  },
+  {
+    "id": "M_F5",
+    "building_id": "M",
+    "number": 5,
+    "name": "Floor 5"
+  },
+  {
+    "id": "UNKNOWN_F0",
+    "building_id": "UNKNOWN",
+    "number": 0,
+    "name": "Floor 0"
+  }
+]

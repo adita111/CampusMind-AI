@@ -1,0 +1,1172 @@
+[
+  {
+    "id": "A0",
+    "building": "A",
+    "floor": 0,
+    "area_m2": 48.0,
+    "capacity": 48,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "A_F0_ZONE_1",
+    "heat_loss_coefficient": 64.8,
+    "thermal_capacity": 10560000.0,
+    "heating_power": 3120.0
+  },
+  {
+    "id": "AUMOVIO_Aula",
+    "building": "UNKNOWN",
+    "floor": 0,
+    "area_m2": 55.0,
+    "capacity": 48,
+    "room_type": "classroom",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "UNKNOWN_F0_ZONE_1",
+    "heat_loss_coefficient": 74.25,
+    "thermal_capacity": 12100000.0,
+    "heating_power": 3575.0
+  },
+  {
+    "id": "AUMOVIO_Lab1",
+    "building": "UNKNOWN",
+    "floor": 0,
+    "area_m2": 48.0,
+    "capacity": 41,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "UNKNOWN_F0_ZONE_1",
+    "heat_loss_coefficient": 64.8,
+    "thermal_capacity": 10560000.0,
+    "heating_power": 3120.0
+  },
+  {
+    "id": "AUMOVIO_Lab2",
+    "building": "UNKNOWN",
+    "floor": 0,
+    "area_m2": 57.0,
+    "capacity": 91,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "UNKNOWN_F0_ZONE_1",
+    "heat_loss_coefficient": 76.95,
+    "thermal_capacity": 12540000.0,
+    "heating_power": 3705.0
+  },
+  {
+    "id": "B001_Campus",
+    "building": "B",
+    "floor": 0,
+    "area_m2": 54.0,
+    "capacity": 95,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "B_F0_ZONE_1",
+    "heat_loss_coefficient": 72.9,
+    "thermal_capacity": 11880000.0,
+    "heating_power": 3510.0
+  },
+  {
+    "id": "B002",
+    "building": "B",
+    "floor": 0,
+    "area_m2": 54.0,
+    "capacity": 76,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "B_F0_ZONE_1",
+    "heat_loss_coefficient": 72.9,
+    "thermal_capacity": 11880000.0,
+    "heating_power": 3510.0
+  },
+  {
+    "id": "B002-Chimie",
+    "building": "B",
+    "floor": 0,
+    "area_m2": 68.0,
+    "capacity": 98,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "B_F0_ZONE_1",
+    "heat_loss_coefficient": 91.8,
+    "thermal_capacity": 14960000.0,
+    "heating_power": 4420.0
+  },
+  {
+    "id": "B003_Campus",
+    "building": "B",
+    "floor": 0,
+    "area_m2": 82.0,
+    "capacity": 59,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "B_F0_ZONE_1",
+    "heat_loss_coefficient": 110.7,
+    "thermal_capacity": 18040000.0,
+    "heating_power": 5330.0
+  },
+  {
+    "id": "B008_Campus",
+    "building": "B",
+    "floor": 0,
+    "area_m2": 96.0,
+    "capacity": 82,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "B_F0_ZONE_1",
+    "heat_loss_coefficient": 129.6,
+    "thermal_capacity": 21120000.0,
+    "heating_power": 6240.0
+  },
+  {
+    "id": "B009-Fizica",
+    "building": "B",
+    "floor": 0,
+    "area_m2": 87.0,
+    "capacity": 69,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "B_F0_ZONE_2",
+    "heat_loss_coefficient": 117.45,
+    "thermal_capacity": 19140000.0,
+    "heating_power": 5655.0
+  },
+  {
+    "id": "B009_Campus",
+    "building": "B",
+    "floor": 0,
+    "area_m2": 70.0,
+    "capacity": 50,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "B_F0_ZONE_2",
+    "heat_loss_coefficient": 94.5,
+    "thermal_capacity": 15400000.0,
+    "heating_power": 4550.0
+  },
+  {
+    "id": "B013_Capus",
+    "building": "B",
+    "floor": 0,
+    "area_m2": 109.0,
+    "capacity": 60,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "B_F0_ZONE_2",
+    "heat_loss_coefficient": 147.15,
+    "thermal_capacity": 23980000.0,
+    "heating_power": 7085.0
+  },
+  {
+    "id": "B014_Campus",
+    "building": "B",
+    "floor": 0,
+    "area_m2": 91.0,
+    "capacity": 90,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "B_F0_ZONE_2",
+    "heat_loss_coefficient": 122.85,
+    "thermal_capacity": 20020000.0,
+    "heating_power": 5915.0
+  },
+  {
+    "id": "B015_Campus",
+    "building": "B",
+    "floor": 0,
+    "area_m2": 77.0,
+    "capacity": 85,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "B_F0_ZONE_2",
+    "heat_loss_coefficient": 103.95,
+    "thermal_capacity": 16940000.0,
+    "heating_power": 5005.0
+  },
+  {
+    "id": "B1",
+    "building": "B",
+    "floor": 0,
+    "area_m2": 77.0,
+    "capacity": 61,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "B_F0_ZONE_3",
+    "heat_loss_coefficient": 103.95,
+    "thermal_capacity": 16940000.0,
+    "heating_power": 5005.0
+  },
+  {
+    "id": "B101_Campus",
+    "building": "B",
+    "floor": 1,
+    "area_m2": 103.0,
+    "capacity": 68,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "B_F1_ZONE_1",
+    "heat_loss_coefficient": 139.05,
+    "thermal_capacity": 22660000.0,
+    "heating_power": 6695.0
+  },
+  {
+    "id": "B103_Campus",
+    "building": "B",
+    "floor": 1,
+    "area_m2": 65.0,
+    "capacity": 84,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "B_F1_ZONE_1",
+    "heat_loss_coefficient": 87.75,
+    "thermal_capacity": 14300000.0,
+    "heating_power": 4225.0
+  },
+  {
+    "id": "B104_Campus",
+    "building": "B",
+    "floor": 1,
+    "area_m2": 91.0,
+    "capacity": 86,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "B_F1_ZONE_1",
+    "heat_loss_coefficient": 122.85,
+    "thermal_capacity": 20020000.0,
+    "heating_power": 5915.0
+  },
+  {
+    "id": "B105_Campus",
+    "building": "B",
+    "floor": 1,
+    "area_m2": 75.0,
+    "capacity": 61,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "B_F1_ZONE_1",
+    "heat_loss_coefficient": 101.25,
+    "thermal_capacity": 16500000.0,
+    "heating_power": 4875.0
+  },
+  {
+    "id": "B110_Campus",
+    "building": "B",
+    "floor": 1,
+    "area_m2": 103.0,
+    "capacity": 81,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "B_F1_ZONE_1",
+    "heat_loss_coefficient": 139.05,
+    "thermal_capacity": 22660000.0,
+    "heating_power": 6695.0
+  },
+  {
+    "id": "B111_Campus",
+    "building": "B",
+    "floor": 1,
+    "area_m2": 84.0,
+    "capacity": 94,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "B_F1_ZONE_2",
+    "heat_loss_coefficient": 113.4,
+    "thermal_capacity": 18480000.0,
+    "heating_power": 5460.0
+  },
+  {
+    "id": "B112_Campus",
+    "building": "B",
+    "floor": 1,
+    "area_m2": 84.0,
+    "capacity": 62,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "B_F1_ZONE_2",
+    "heat_loss_coefficient": 113.4,
+    "thermal_capacity": 18480000.0,
+    "heating_power": 5460.0
+  },
+  {
+    "id": "B115_Campus",
+    "building": "B",
+    "floor": 1,
+    "area_m2": 98.0,
+    "capacity": 100,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "B_F1_ZONE_2",
+    "heat_loss_coefficient": 132.3,
+    "thermal_capacity": 21560000.0,
+    "heating_power": 6370.0
+  },
+  {
+    "id": "B116_Campus",
+    "building": "B",
+    "floor": 1,
+    "area_m2": 77.0,
+    "capacity": 92,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "B_F1_ZONE_2",
+    "heat_loss_coefficient": 103.95,
+    "thermal_capacity": 16940000.0,
+    "heating_power": 5005.0
+  },
+  {
+    "id": "B117_Campus",
+    "building": "B",
+    "floor": 1,
+    "area_m2": 100.0,
+    "capacity": 48,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "B_F1_ZONE_2",
+    "heat_loss_coefficient": 135.0,
+    "thermal_capacity": 22000000.0,
+    "heating_power": 6500.0
+  },
+  {
+    "id": "B300",
+    "building": "B",
+    "floor": 3,
+    "area_m2": 40.0,
+    "capacity": 68,
+    "room_type": "classroom",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "B_F3_ZONE_1",
+    "heat_loss_coefficient": 54.0,
+    "thermal_capacity": 8800000.0,
+    "heating_power": 2600.0
+  },
+  {
+    "id": "B304-Fizica",
+    "building": "B",
+    "floor": 3,
+    "area_m2": 71.0,
+    "capacity": 49,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "B_F3_ZONE_1",
+    "heat_loss_coefficient": 95.85,
+    "thermal_capacity": 15620000.0,
+    "heating_power": 4615.0
+  },
+  {
+    "id": "B308_Ratiu",
+    "building": "B",
+    "floor": 3,
+    "area_m2": 106.0,
+    "capacity": 57,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "B_F3_ZONE_1",
+    "heat_loss_coefficient": 143.1,
+    "thermal_capacity": 23320000.0,
+    "heating_power": 6890.0
+  },
+  {
+    "id": "B403",
+    "building": "B",
+    "floor": 4,
+    "area_m2": 91.0,
+    "capacity": 69,
+    "room_type": "classroom",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "B_F4_ZONE_1",
+    "heat_loss_coefficient": 122.85,
+    "thermal_capacity": 20020000.0,
+    "heating_power": 5915.0
+  },
+  {
+    "id": "C1",
+    "building": "C",
+    "floor": 0,
+    "area_m2": 43.0,
+    "capacity": 44,
+    "room_type": "classroom",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "C_F0_ZONE_1",
+    "heat_loss_coefficient": 58.05,
+    "thermal_capacity": 9460000.0,
+    "heating_power": 2795.0
+  },
+  {
+    "id": "COMPA",
+    "building": "UNKNOWN",
+    "floor": 0,
+    "area_m2": 51.0,
+    "capacity": 86,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "UNKNOWN_F0_ZONE_1",
+    "heat_loss_coefficient": 68.85,
+    "thermal_capacity": 11220000.0,
+    "heating_power": 3315.0
+  },
+  {
+    "id": "D1",
+    "building": "D",
+    "floor": 0,
+    "area_m2": 102.0,
+    "capacity": 96,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "D_F0_ZONE_1",
+    "heat_loss_coefficient": 137.7,
+    "thermal_capacity": 22440000.0,
+    "heating_power": 6630.0
+  },
+  {
+    "id": "D2",
+    "building": "D",
+    "floor": 0,
+    "area_m2": 69.0,
+    "capacity": 79,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "D_F0_ZONE_1",
+    "heat_loss_coefficient": 93.15,
+    "thermal_capacity": 15180000.0,
+    "heating_power": 4485.0
+  },
+  {
+    "id": "FLA1.16",
+    "building": "FLA",
+    "floor": 0,
+    "area_m2": 64.0,
+    "capacity": 77,
+    "room_type": "classroom",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "FLA_F0_ZONE_1",
+    "heat_loss_coefficient": 86.4,
+    "thermal_capacity": 14080000.0,
+    "heating_power": 4160.0
+  },
+  {
+    "id": "FLA1.41",
+    "building": "FLA",
+    "floor": 0,
+    "area_m2": 60.0,
+    "capacity": 41,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "FLA_F0_ZONE_1",
+    "heat_loss_coefficient": 81.0,
+    "thermal_capacity": 13200000.0,
+    "heating_power": 3900.0
+  },
+  {
+    "id": "FLA1.62",
+    "building": "FLA",
+    "floor": 0,
+    "area_m2": 103.0,
+    "capacity": 54,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "FLA_F0_ZONE_1",
+    "heat_loss_coefficient": 139.05,
+    "thermal_capacity": 22660000.0,
+    "heating_power": 6695.0
+  },
+  {
+    "id": "IE002",
+    "building": "IE",
+    "floor": 0,
+    "area_m2": 109.0,
+    "capacity": 82,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "IE_F0_ZONE_1",
+    "heat_loss_coefficient": 147.15,
+    "thermal_capacity": 23980000.0,
+    "heating_power": 7085.0
+  },
+  {
+    "id": "IE003",
+    "building": "IE",
+    "floor": 0,
+    "area_m2": 98.0,
+    "capacity": 50,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "IE_F0_ZONE_1",
+    "heat_loss_coefficient": 132.3,
+    "thermal_capacity": 21560000.0,
+    "heating_power": 6370.0
+  },
+  {
+    "id": "IE004",
+    "building": "IE",
+    "floor": 0,
+    "area_m2": 97.0,
+    "capacity": 82,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "IE_F0_ZONE_1",
+    "heat_loss_coefficient": 130.95,
+    "thermal_capacity": 21340000.0,
+    "heating_power": 6305.0
+  },
+  {
+    "id": "IE005",
+    "building": "IE",
+    "floor": 0,
+    "area_m2": 78.0,
+    "capacity": 99,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "IE_F0_ZONE_1",
+    "heat_loss_coefficient": 105.3,
+    "thermal_capacity": 17160000.0,
+    "heating_power": 5070.0
+  },
+  {
+    "id": "IE006",
+    "building": "IE",
+    "floor": 0,
+    "area_m2": 108.0,
+    "capacity": 80,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "IE_F0_ZONE_1",
+    "heat_loss_coefficient": 145.8,
+    "thermal_capacity": 23760000.0,
+    "heating_power": 7020.0
+  },
+  {
+    "id": "IE012",
+    "building": "IE",
+    "floor": 0,
+    "area_m2": 47.0,
+    "capacity": 42,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "IE_F0_ZONE_2",
+    "heat_loss_coefficient": 63.45,
+    "thermal_capacity": 10340000.0,
+    "heating_power": 3055.0
+  },
+  {
+    "id": "IE013",
+    "building": "IE",
+    "floor": 0,
+    "area_m2": 71.0,
+    "capacity": 68,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "IE_F0_ZONE_2",
+    "heat_loss_coefficient": 95.85,
+    "thermal_capacity": 15620000.0,
+    "heating_power": 4615.0
+  },
+  {
+    "id": "IE101",
+    "building": "IE",
+    "floor": 1,
+    "area_m2": 77.0,
+    "capacity": 87,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "IE_F1_ZONE_1",
+    "heat_loss_coefficient": 103.95,
+    "thermal_capacity": 16940000.0,
+    "heating_power": 5005.0
+  },
+  {
+    "id": "IE102",
+    "building": "IE",
+    "floor": 1,
+    "area_m2": 59.0,
+    "capacity": 70,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "IE_F1_ZONE_1",
+    "heat_loss_coefficient": 79.65,
+    "thermal_capacity": 12980000.0,
+    "heating_power": 3835.0
+  },
+  {
+    "id": "IE112",
+    "building": "IE",
+    "floor": 1,
+    "area_m2": 78.0,
+    "capacity": 67,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "IE_F1_ZONE_1",
+    "heat_loss_coefficient": 105.3,
+    "thermal_capacity": 17160000.0,
+    "heating_power": 5070.0
+  },
+  {
+    "id": "IE113",
+    "building": "IE",
+    "floor": 1,
+    "area_m2": 70.0,
+    "capacity": 57,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "IE_F1_ZONE_1",
+    "heat_loss_coefficient": 94.5,
+    "thermal_capacity": 15400000.0,
+    "heating_power": 4550.0
+  },
+  {
+    "id": "IE206",
+    "building": "IE",
+    "floor": 2,
+    "area_m2": 101.0,
+    "capacity": 51,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "IE_F2_ZONE_1",
+    "heat_loss_coefficient": 136.35,
+    "thermal_capacity": 22220000.0,
+    "heating_power": 6565.0
+  },
+  {
+    "id": "IE301",
+    "building": "IE",
+    "floor": 3,
+    "area_m2": 83.0,
+    "capacity": 58,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "IE_F3_ZONE_1",
+    "heat_loss_coefficient": 112.05,
+    "thermal_capacity": 18260000.0,
+    "heating_power": 5395.0
+  },
+  {
+    "id": "IE302",
+    "building": "IE",
+    "floor": 3,
+    "area_m2": 54.0,
+    "capacity": 100,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "IE_F3_ZONE_1",
+    "heat_loss_coefficient": 72.9,
+    "thermal_capacity": 11880000.0,
+    "heating_power": 3510.0
+  },
+  {
+    "id": "IE303",
+    "building": "IE",
+    "floor": 3,
+    "area_m2": 81.0,
+    "capacity": 72,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "IE_F3_ZONE_1",
+    "heat_loss_coefficient": 109.35,
+    "thermal_capacity": 17820000.0,
+    "heating_power": 5265.0
+  },
+  {
+    "id": "IE304",
+    "building": "IE",
+    "floor": 3,
+    "area_m2": 99.0,
+    "capacity": 97,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "IE_F3_ZONE_1",
+    "heat_loss_coefficient": 133.65,
+    "thermal_capacity": 21780000.0,
+    "heating_power": 6435.0
+  },
+  {
+    "id": "IE305",
+    "building": "IE",
+    "floor": 3,
+    "area_m2": 60.0,
+    "capacity": 64,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "IE_F3_ZONE_1",
+    "heat_loss_coefficient": 81.0,
+    "thermal_capacity": 13200000.0,
+    "heating_power": 3900.0
+  },
+  {
+    "id": "L1A_Litere",
+    "building": "L",
+    "floor": 0,
+    "area_m2": 77.0,
+    "capacity": 95,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "L_F0_ZONE_1",
+    "heat_loss_coefficient": 103.95,
+    "thermal_capacity": 16940000.0,
+    "heating_power": 5005.0
+  },
+  {
+    "id": "L1B_Litere",
+    "building": "L",
+    "floor": 0,
+    "area_m2": 89.0,
+    "capacity": 73,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "L_F0_ZONE_1",
+    "heat_loss_coefficient": 120.15,
+    "thermal_capacity": 19580000.0,
+    "heating_power": 5785.0
+  },
+  {
+    "id": "Litere",
+    "building": "UNKNOWN",
+    "floor": 0,
+    "area_m2": 86.0,
+    "capacity": 78,
+    "room_type": "classroom",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "UNKNOWN_F0_ZONE_1",
+    "heat_loss_coefficient": 116.1,
+    "thermal_capacity": 18920000.0,
+    "heating_power": 5590.0
+  },
+  {
+    "id": "M505",
+    "building": "M",
+    "floor": 5,
+    "area_m2": 64.0,
+    "capacity": 69,
+    "room_type": "classroom",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "M_F5_ZONE_1",
+    "heat_loss_coefficient": 86.4,
+    "thermal_capacity": 14080000.0,
+    "heating_power": 4160.0
+  },
+  {
+    "id": "Medias_A0",
+    "building": "UNKNOWN",
+    "floor": 0,
+    "area_m2": 55.0,
+    "capacity": 96,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "UNKNOWN_F0_ZONE_2",
+    "heat_loss_coefficient": 74.25,
+    "thermal_capacity": 12100000.0,
+    "heating_power": 3575.0
+  },
+  {
+    "id": "Medias_A1",
+    "building": "UNKNOWN",
+    "floor": 0,
+    "area_m2": 92.0,
+    "capacity": 69,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "UNKNOWN_F0_ZONE_2",
+    "heat_loss_coefficient": 124.2,
+    "thermal_capacity": 20240000.0,
+    "heating_power": 5980.0
+  },
+  {
+    "id": "Medias_A2",
+    "building": "UNKNOWN",
+    "floor": 0,
+    "area_m2": 67.0,
+    "capacity": 57,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "UNKNOWN_F0_ZONE_2",
+    "heat_loss_coefficient": 90.45,
+    "thermal_capacity": 14740000.0,
+    "heating_power": 4355.0
+  },
+  {
+    "id": "Medias_S11",
+    "building": "UNKNOWN",
+    "floor": 0,
+    "area_m2": 100.0,
+    "capacity": 43,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "UNKNOWN_F0_ZONE_2",
+    "heat_loss_coefficient": 135.0,
+    "thermal_capacity": 22000000.0,
+    "heating_power": 6500.0
+  },
+  {
+    "id": "Medias_S21",
+    "building": "UNKNOWN",
+    "floor": 0,
+    "area_m2": 62.0,
+    "capacity": 84,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "UNKNOWN_F0_ZONE_2",
+    "heat_loss_coefficient": 83.7,
+    "thermal_capacity": 13640000.0,
+    "heating_power": 4030.0
+  },
+  {
+    "id": "Medias_S22",
+    "building": "UNKNOWN",
+    "floor": 0,
+    "area_m2": 62.0,
+    "capacity": 86,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "UNKNOWN_F0_ZONE_3",
+    "heat_loss_coefficient": 83.7,
+    "thermal_capacity": 13640000.0,
+    "heating_power": 4030.0
+  },
+  {
+    "id": "Medias_S23",
+    "building": "UNKNOWN",
+    "floor": 0,
+    "area_m2": 108.0,
+    "capacity": 89,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "UNKNOWN_F0_ZONE_3",
+    "heat_loss_coefficient": 145.8,
+    "thermal_capacity": 23760000.0,
+    "heating_power": 7020.0
+  },
+  {
+    "id": "NTTDATA_Aula_Brukenthal",
+    "building": "UNKNOWN",
+    "floor": 0,
+    "area_m2": 60.0,
+    "capacity": 63,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "UNKNOWN_F0_ZONE_3",
+    "heat_loss_coefficient": 81.0,
+    "thermal_capacity": 13200000.0,
+    "heating_power": 3900.0
+  },
+  {
+    "id": "NTTDATA_Evolution",
+    "building": "UNKNOWN",
+    "floor": 0,
+    "area_m2": 94.0,
+    "capacity": 47,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "UNKNOWN_F0_ZONE_3",
+    "heat_loss_coefficient": 126.9,
+    "thermal_capacity": 20680000.0,
+    "heating_power": 6110.0
+  },
+  {
+    "id": "NTTDATA_Quest",
+    "building": "UNKNOWN",
+    "floor": 0,
+    "area_m2": 93.0,
+    "capacity": 60,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "UNKNOWN_F0_ZONE_3",
+    "heat_loss_coefficient": 125.55,
+    "thermal_capacity": 20460000.0,
+    "heating_power": 6045.0
+  },
+  {
+    "id": "NTTDATA_Sensei",
+    "building": "UNKNOWN",
+    "floor": 0,
+    "area_m2": 64.0,
+    "capacity": 70,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "UNKNOWN_F0_ZONE_4",
+    "heat_loss_coefficient": 86.4,
+    "thermal_capacity": 14080000.0,
+    "heating_power": 4160.0
+  },
+  {
+    "id": "Sala - A12 - Corp A",
+    "building": "UNKNOWN",
+    "floor": 0,
+    "area_m2": 85.0,
+    "capacity": 49,
+    "room_type": "classroom",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "UNKNOWN_F0_ZONE_4",
+    "heat_loss_coefficient": 114.75,
+    "thermal_capacity": 18700000.0,
+    "heating_power": 5525.0
+  },
+  {
+    "id": "Sala - A16 - Corp A",
+    "building": "UNKNOWN",
+    "floor": 0,
+    "area_m2": 96.0,
+    "capacity": 47,
+    "room_type": "classroom",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "UNKNOWN_F0_ZONE_4",
+    "heat_loss_coefficient": 129.6,
+    "thermal_capacity": 21120000.0,
+    "heating_power": 6240.0
+  },
+  {
+    "id": "Sala - A17 - Corp A",
+    "building": "UNKNOWN",
+    "floor": 0,
+    "area_m2": 75.0,
+    "capacity": 82,
+    "room_type": "classroom",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "UNKNOWN_F0_ZONE_4",
+    "heat_loss_coefficient": 101.25,
+    "thermal_capacity": 16500000.0,
+    "heating_power": 4875.0
+  },
+  {
+    "id": "Sala - A18 - Corp A",
+    "building": "UNKNOWN",
+    "floor": 0,
+    "area_m2": 91.0,
+    "capacity": 94,
+    "room_type": "classroom",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "UNKNOWN_F0_ZONE_4",
+    "heat_loss_coefficient": 122.85,
+    "thermal_capacity": 20020000.0,
+    "heating_power": 5915.0
+  },
+  {
+    "id": "Sala - A22 - Corp A",
+    "building": "UNKNOWN",
+    "floor": 0,
+    "area_m2": 65.0,
+    "capacity": 51,
+    "room_type": "classroom",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "UNKNOWN_F0_ZONE_5",
+    "heat_loss_coefficient": 87.75,
+    "thermal_capacity": 14300000.0,
+    "heating_power": 4225.0
+  },
+  {
+    "id": "Sala - A25 - Corp A",
+    "building": "UNKNOWN",
+    "floor": 0,
+    "area_m2": 74.0,
+    "capacity": 88,
+    "room_type": "classroom",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "UNKNOWN_F0_ZONE_5",
+    "heat_loss_coefficient": 99.9,
+    "thermal_capacity": 16280000.0,
+    "heating_power": 4810.0
+  },
+  {
+    "id": "Sala - A27 - Corp A",
+    "building": "UNKNOWN",
+    "floor": 0,
+    "area_m2": 42.0,
+    "capacity": 87,
+    "room_type": "classroom",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "UNKNOWN_F0_ZONE_5",
+    "heat_loss_coefficient": 56.7,
+    "thermal_capacity": 9240000.0,
+    "heating_power": 2730.0
+  },
+  {
+    "id": "TRANSELECTRICA_S1",
+    "building": "UNKNOWN",
+    "floor": 0,
+    "area_m2": 82.0,
+    "capacity": 54,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "UNKNOWN_F0_ZONE_5",
+    "heat_loss_coefficient": 110.7,
+    "thermal_capacity": 18040000.0,
+    "heating_power": 5330.0
+  },
+  {
+    "id": "TRANSELECTRICA_S2",
+    "building": "UNKNOWN",
+    "floor": 0,
+    "area_m2": 97.0,
+    "capacity": 77,
+    "room_type": "laboratory",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "UNKNOWN_F0_ZONE_5",
+    "heat_loss_coefficient": 130.95,
+    "thermal_capacity": 21340000.0,
+    "heating_power": 6305.0
+  },
+  {
+    "id": "Teren_sport_Campus",
+    "building": "UNKNOWN",
+    "floor": 0,
+    "area_m2": 101.0,
+    "capacity": 68,
+    "room_type": "classroom",
+    "equipment": [
+      "projector"
+    ],
+    "heating_zone": "UNKNOWN_F0_ZONE_6",
+    "heat_loss_coefficient": 136.35,
+    "thermal_capacity": 22220000.0,
+    "heating_power": 6565.0
+  }
+]

@@ -18,14 +18,14 @@ def load_json(filename: str):
 def get_buildings() -> list[Building]:
     return [
         Building(**item)
-        for item in load_json("buildings.json")
+        for item in load_json("generated/buildings.json")
     ]
 
 
 def get_floors(building_id: str) -> list[Floor]:
     floors = [
         Floor(**item)
-        for item in load_json("floors.json")
+        for item in load_json("generated/floors.json")
     ]
 
     return [
@@ -38,7 +38,7 @@ def get_floors(building_id: str) -> list[Floor]:
 def get_heating_zones() -> list[HeatingZone]:
     return [
         HeatingZone(**item)
-        for item in load_json("heating_zones.json")
+        for item in load_json("generated/heating_zones.json")
     ]
 
 

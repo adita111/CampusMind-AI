@@ -104,6 +104,32 @@ export interface EnergyComparison {
 }
 
 
+export interface UlbsActivity {
+  id: string;
+  room_id: string;
+  course_name: string;
+  weekday: number;
+  start_time: string;
+  end_time: string;
+  group: string;
+  students_count: number | null;
+  activity_type: string;
+  required_equipment: string[];
+  professor: string | null;
+  is_odd_week: boolean;
+  is_even_week: boolean;
+  source: string;
+  source_schedule_id: number;
+  source_slot_id: number;
+  source_room_id: string | null;
+  formation_ids: number[];
+  formation_names: string[];
+  requested_formation_ids: number[];
+}
+
+export type WeekParity = 'all' | 'odd' | 'even';
+
+
 @Injectable({
   providedIn: 'root'
 })
@@ -152,15 +178,48 @@ export class CampusService {
     {}
   );
 }
-compareEnergy(outsideTemperature: number, weekday: number) {
+compareEnergy(
+  outsideTemperature: number,
+  weekday: number,
+  weekParity: 'odd' | 'even' = 'odd'
+) {
   return this.http.get<EnergyComparison>(
     `${this.apiUrl}/simulation/compare`,
     {
       params: {
         outside_temperature: outsideTemperature,
-        weekday: weekday
+        weekday: weekday,
+        week_parity: weekParity
       }
     }
   );
 }
+
+
+getUlbsRooms() {
+  return this.http.get<string[]>(
+    `${this.apiUrl}/ulbs/rooms`
+  );
+}
+
+getUlbsSchedule(
+  roomId: string,
+  weekday?: number,
+  weekParity: WeekParity = 'all'
+) {
+  const params: Record<string, string> = {
+    room_id: roomId,
+    week_parity: weekParity
+  };
+
+  if (weekday !== undefined) {
+    params['weekday'] = String(weekday);
+  }
+
+  return this.http.get<UlbsActivity[]>(
+    `${this.apiUrl}/ulbs/schedule`,
+    { params }
+  );
+}
+
 }

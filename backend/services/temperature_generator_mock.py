@@ -8,6 +8,7 @@ from pathlib import Path
 DATA_FILE = (
     Path(__file__).resolve().parent.parent
     / "data"
+    / "generated"
     / "room_states.json"
 )
 
