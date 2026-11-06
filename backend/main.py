@@ -11,6 +11,12 @@ from services.room_service import (
     update_room_state
 )
 
+from models.scheduled_activity import ScheduledActivity
+from services.schedule_service import (
+    get_all_activities,
+    get_room_schedule
+)
+
 from services.thermal_service import calculate_next_temperature
 
 
@@ -85,3 +91,26 @@ def simulate_room(room_id: str, request: SimulationRequest):
     update_room_state(state)
 
     return state
+
+
+@app.get("/schedule", response_model=list[ScheduledActivity])
+def get_schedule():
+    return get_all_activities()
+
+
+@app.get(
+    "/rooms/{room_id}/schedule",
+    response_model=list[ScheduledActivity]
+)
+def get_schedule_for_room(room_id: str):
+
+    room = get_room_by_id(room_id)
+
+    if room is None:
+        raise HTTPException(
+            status_code=404,
+            detail="Room not found"
+        )
+
+    return get_room_schedule(room_id)
+

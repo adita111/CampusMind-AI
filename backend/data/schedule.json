@@ -1,0 +1,39 @@
+
+[
+  {
+    "id": "ACT001",
+    "room_id": "IE101",
+    "course_name": "Mathematics",
+    "weekday": 0,
+    "start_time": "08:00",
+    "end_time": "10:00",
+    "group": "G1",
+    "students_count": 40,
+    "activity_type": "course",
+    "required_equipment": ["projector"]
+  },
+  {
+    "id": "ACT002",
+    "room_id": "IE102",
+    "course_name": "Programming",
+    "weekday": 0,
+    "start_time": "10:00",
+    "end_time": "12:00",
+    "group": "G2",
+    "students_count": 35,
+    "activity_type": "course",
+    "required_equipment": ["projector"]
+  },
+  {
+    "id": "ACT003",
+    "room_id": "IM201",
+    "course_name": "Physics",
+    "weekday": 1,
+    "start_time": "08:00",
+    "end_time": "10:00",
+    "group": "G3",
+    "students_count": 60,
+    "activity_type": "course",
+    "required_equipment": ["projector"]
+  }
+]
