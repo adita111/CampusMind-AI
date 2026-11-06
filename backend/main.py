@@ -6,6 +6,7 @@ from models.building import Building, Floor
 from models.heating_zone import HeatingZone
 from models.room_state import RoomState, SimulationRequest
 from fastapi.middleware.cors import CORSMiddleware
+from services.schedule_optimizer import optimize_schedule
 
 import httpx
 from services.weather_service import get_weather_forecast
@@ -266,3 +267,16 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"]
 )
+
+
+@app.post("/optimize/schedule")
+def run_schedule_optimization():
+    try:
+        return optimize_schedule()
+
+    except ValueError as error:
+        raise HTTPException(
+            status_code=422,
+            detail=str(error)
+        )
+
