@@ -1,0 +1,38 @@
+
+[
+  {
+    "id": "TEMP_IE101",
+    "room_id": "IE101",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_IE102",
+    "room_id": "IE102",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_IM201",
+    "room_id": "IM201",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_IM202",
+    "room_id": "IM202",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  },
+  {
+    "id": "TEMP_IE_HALL_1",
+    "room_id": "IE_HALL_1",
+    "sensor_type": "temperature",
+    "unit": "celsius",
+    "simulated": true
+  }
+]

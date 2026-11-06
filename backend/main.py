@@ -12,6 +12,15 @@ from services.weather_service import get_weather_forecast
 from datetime import datetime
 from services.heating_controller import predict_heating_start
 
+from models.sensor import Sensor, SensorReading
+
+from services.sensor_service import (
+    get_all_sensors,
+    get_sensor_by_id,
+    get_sensors_by_room,
+    get_sensor_reading
+)
+
 from services.room_service import (
     get_all_rooms,
     get_room_by_id,
@@ -199,3 +208,51 @@ def list_rooms_on_floor(building_id: str, floor_number: int):
 @app.get("/heating-zones", response_model=list[HeatingZone])
 def list_heating_zones():
     return get_heating_zones()
+
+
+@app.get("/sensors", response_model=list[Sensor])
+def list_sensors():
+    return get_all_sensors()
+
+
+@app.get("/sensors/{sensor_id}", response_model=Sensor)
+def sensor_details(sensor_id: str):
+    sensor = get_sensor_by_id(sensor_id)
+
+    if sensor is None:
+        raise HTTPException(
+            status_code=404,
+            detail="Sensor not found"
+        )
+
+    return sensor
+
+
+@app.get(
+    "/sensors/{sensor_id}/reading",
+    response_model=SensorReading
+)
+def sensor_reading(sensor_id: str):
+    reading = get_sensor_reading(sensor_id)
+
+    if reading is None:
+        raise HTTPException(
+            status_code=404,
+            detail="Sensor reading not found"
+        )
+
+    return reading
+
+
+@app.get("/rooms/{room_id}/sensors", response_model=list[Sensor])
+def room_sensors(room_id: str):
+    room = get_room_by_id(room_id)
+
+    if room is None:
+        raise HTTPException(
+            status_code=404,
+            detail="Room not found"
+        )
+
+    return get_sensors_by_room(room_id)
+
