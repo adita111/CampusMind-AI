@@ -1,0 +1,55 @@
+
+[
+  {
+    "id": "IE101",
+    "building": "IE",
+    "floor": 1,
+    "area_m2": 82.43,
+    "capacity": 72,
+    "room_type": "course",
+    "equipment": ["projector"],
+    "heating_zone": "IE_ZONE_1",
+    "heat_loss_coefficient": 110,
+    "thermal_capacity": 18000000,
+    "heating_power": 5000
+  },
+  {
+    "id": "IE102",
+    "building": "IE",
+    "floor": 1,
+    "area_m2": 82.43,
+    "capacity": 72,
+    "room_type": "course",
+    "equipment": ["projector"],
+    "heating_zone": "IE_ZONE_1",
+    "heat_loss_coefficient": 105,
+    "thermal_capacity": 17500000,
+    "heating_power": 5000
+  },
+  {
+    "id": "IM201",
+    "building": "IM",
+    "floor": 2,
+    "area_m2": 101.68,
+    "capacity": 90,
+    "room_type": "course",
+    "equipment": ["projector"],
+    "heating_zone": "IM_ZONE_2",
+    "heat_loss_coefficient": 140,
+    "thermal_capacity": 23000000,
+    "heating_power": 6500
+  },
+  {
+    "id": "IM202",
+    "building": "IM",
+    "floor": 2,
+    "area_m2": 57.97,
+    "capacity": 60,
+    "room_type": "seminar",
+    "equipment": ["projector"],
+    "heating_zone": "IM_ZONE_2",
+    "heat_loss_coefficient": 85,
+    "thermal_capacity": 13000000,
+    "heating_power": 3500
+  }
+]
