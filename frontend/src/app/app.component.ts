@@ -8,7 +8,8 @@ import {
   Floor,
   Room,
   SensorReading,
-  ScheduledActivity
+  ScheduledActivity,
+  OptimizationResult
 } from './services/campus.service';
 
 @Component({
@@ -34,6 +35,10 @@ export class AppComponent implements OnInit {
 
   loading = false;
   error = '';
+
+  optimizationResult: OptimizationResult | null = null;
+optimizing = false;
+optimizationError = '';
 
   ngOnInit(): void {
     this.loadBuildings();
@@ -157,5 +162,32 @@ export class AppComponent implements OnInit {
         this.error = 'Could not load schedule';
       }
     });
+
+    
   }
+
+  
+runOptimization(): void {
+  this.optimizing = true;
+  this.optimizationError = '';
+  this.optimizationResult = null;
+
+  this.campusService.optimizeSchedule().subscribe({
+    next: (result) => {
+      this.optimizationResult = result;
+      this.optimizing = false;
+
+      console.log('Optimization result:', result);
+    },
+    error: (error) => {
+      this.optimizing = false;
+
+      this.optimizationError =
+        error.error?.detail || 'Schedule optimization failed';
+
+      console.error('Optimization error:', error);
+    }
+  });
+}
+
 }

@@ -172,3 +172,60 @@ header {
     flex-wrap: wrap;
   }
 }
+
+
+.optimization-panel {
+  .section-header {
+    margin-bottom: 24px;
+  }
+
+  .section-header p {
+    color: #64748b;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    margin-top: 30px;
+  }
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.optimization-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+
+  th, td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  th {
+    background: #f8fafc;
+    color: #475569;
+  }
+
+  tbody tr:hover {
+    background: #f8fafc;
+  }
+}
+
+.move-badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 12px;
+
+  &.moved {
+    background: #dcfce7;
+    color: #166534;
+  }
+}
+

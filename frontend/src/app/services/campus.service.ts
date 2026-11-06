@@ -53,6 +53,22 @@ export interface ScheduledActivity {
   activity_type: string;
 }
 
+
+export interface OptimizedActivity extends ScheduledActivity {
+  original_room_id: string;
+  heating_zone: string;
+  moved: boolean;
+}
+
+export interface OptimizationResult {
+  status: string;
+  original_zone_count: number;
+  optimized_zone_count: number;
+  moved_activities: number;
+  activities: OptimizedActivity[];
+}
+
+
 @Injectable({
   providedIn: 'root'
 })
@@ -95,4 +111,10 @@ export class CampusService {
       `${this.apiUrl}/rooms/${roomId}/schedule`
     );
   }
+  optimizeSchedule() {
+  return this.http.post<OptimizationResult>(
+    `${this.apiUrl}/optimize/schedule`,
+    {}
+  );
+}
 }

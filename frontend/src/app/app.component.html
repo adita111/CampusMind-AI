@@ -150,4 +150,106 @@
     {{ error }}
   </p>
 
+  
+<section class="panel optimization-panel">
+
+  <div class="section-header">
+    <div>
+      <h2>AI Schedule Optimization</h2>
+      <p>
+        Optimize classroom allocation to reduce
+        the number of heating zones used.
+      </p>
+    </div>
+
+    <button
+      class="refresh-button"
+      (click)="runOptimization()"
+      [disabled]="optimizing"
+    >
+      {{ optimizing ? 'Optimizing...' : 'Optimize Schedule' }}
+    </button>
+  </div>
+
+  <p class="error" *ngIf="optimizationError">
+    {{ optimizationError }}
+  </p>
+
+  <div *ngIf="optimizationResult as result">
+
+    <div class="stats">
+
+      <div class="stat-card">
+        <span>Original Heating Zones</span>
+        <strong>{{ result.original_zone_count }}</strong>
+      </div>
+
+      <div class="stat-card">
+        <span>Optimized Heating Zones</span>
+        <strong>{{ result.optimized_zone_count }}</strong>
+      </div>
+
+      <div class="stat-card">
+        <span>Moved Activities</span>
+        <strong>{{ result.moved_activities }}</strong>
+      </div>
+
+      <div class="stat-card">
+        <span>Total Activities</span>
+        <strong>{{ result.activities.length }}</strong>
+      </div>
+
+    </div>
+
+    <h3>Optimized Schedule</h3>
+
+    <div class="table-container">
+      <table class="optimization-table">
+
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Original Room</th>
+            <th>Optimized Room</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let activity of result.activities">
+
+            <td>{{ activity.course_name }}</td>
+
+            <td>{{ activity.weekday }}</td>
+
+            <td>
+              {{ activity.start_time }} -
+              {{ activity.end_time }}
+            </td>
+
+            <td>{{ activity.original_room_id }}</td>
+
+            <td>{{ activity.room_id }}</td>
+
+            <td>
+              <span
+                class="move-badge"
+                [class.moved]="activity.moved"
+              >
+                {{ activity.moved ? 'Moved' : 'Unchanged' }}
+              </span>
+            </td>
+
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+
+  </div>
+
+</section>
+
 </div>
