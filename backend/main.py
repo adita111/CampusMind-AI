@@ -4,6 +4,9 @@ from fastapi import FastAPI, HTTPException
 from models.room import Room
 from models.room_state import RoomState, SimulationRequest
 
+import httpx
+from services.weather_service import get_weather_forecast
+
 from services.room_service import (
     get_all_rooms,
     get_room_by_id,
@@ -113,4 +116,21 @@ def get_schedule_for_room(room_id: str):
         )
 
     return get_room_schedule(room_id)
+
+
+@app.get("/weather/forecast")
+def weather_forecast():
+    try:
+        forecast = get_weather_forecast()
+
+        return {
+            "city": "Sibiu",
+            "forecast": forecast
+        }
+
+    except (httpx.HTTPError, KeyError, ValueError) as error:
+        raise HTTPException(
+            status_code=502,
+            detail="Weather service unavailable"
+        ) from error
 
