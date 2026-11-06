@@ -1,10 +1,7 @@
 
 from datetime import time
 
-from services.room_service import (
-    get_all_rooms,
-    get_all_states
-)
+from services.room_service import get_all_rooms, get_all_states
 from services.schedule_service import get_all_activities
 from services.campus_service import get_heating_zones
 from services.schedule_optimizer import optimize_schedule
@@ -14,7 +11,6 @@ from services.thermal_service import calculate_next_temperature
 STEP_MINUTES = 15
 COMFORT_TEMP = 21.0
 ECO_TEMP = 16.0
-PREHEAT_MINUTES = 90
 LIGHTING_W_PER_M2 = 10.0
 
 
@@ -40,14 +36,95 @@ def room_occupied(room_id, minute, activities, weekday):
     )
 
 
-def room_needed_soon(room_id, minute, activities, weekday):
-    return any(
-        activity_value(a, "room_id") == room_id
-        and activity_value(a, "weekday") == weekday
-        and minute <= to_minutes(activity_value(a, "start_time"))
-        < minute + PREHEAT_MINUTES
-        for a in activities
+def predict_temperature(
+    room,
+    current_temperature,
+    outside_temperature,
+    minutes,
+    heating_on
+):
+    if minutes <= 0:
+        return current_temperature
+
+    return calculate_next_temperature(
+        current_temp=current_temperature,
+        outside_temp=outside_temperature,
+        heating_on=heating_on,
+        heating_power=room.heating_power,
+        heat_loss_coefficient=room.heat_loss_coefficient,
+        thermal_capacity=room.thermal_capacity,
+        minutes=minutes
     )
+
+
+def should_preheat_zone(
+    zone_rooms,
+    temperatures,
+    activities,
+    minute,
+    weekday,
+    outside_temperature
+):
+    comfort_limit = COMFORT_TEMP - 0.5
+
+    for room in zone_rooms:
+        for activity in activities:
+
+            if activity_value(activity, "room_id") != room.id:
+                continue
+
+            if activity_value(activity, "weekday") != weekday:
+                continue
+
+            course_start = to_minutes(
+                activity_value(activity, "start_time")
+            )
+
+            if course_start <= minute:
+                continue
+
+            time_until_course = course_start - minute
+
+            # Check if heating continuously from now
+            # can reach the comfort temperature.
+            temp_if_on_now = predict_temperature(
+                room=room,
+                current_temperature=temperatures[room.id],
+                outside_temperature=outside_temperature,
+                minutes=time_until_course,
+                heating_on=True
+            )
+
+            # If heating is insufficient, start immediately.
+            if temp_if_on_now < comfort_limit:
+                return True
+
+            # Predict cooling if heating is delayed.
+            temperature_after_wait = predict_temperature(
+                room=room,
+                current_temperature=temperatures[room.id],
+                outside_temperature=outside_temperature,
+                minutes=STEP_MINUTES,
+                heating_on=False
+            )
+
+            remaining_minutes = max(
+                0,
+                time_until_course - STEP_MINUTES
+            )
+
+            predicted_temperature = predict_temperature(
+                room=room,
+                current_temperature=temperature_after_wait,
+                outside_temperature=outside_temperature,
+                minutes=remaining_minutes,
+                heating_on=True
+            )
+
+            if predicted_temperature < comfort_limit:
+                return True
+
+    return False
 
 
 def simulate_scenario(
@@ -61,6 +138,7 @@ def simulate_scenario(
     states = get_all_states()
     zones = get_heating_zones()
 
+    # Independent copy of initial room temperatures.
     temperatures = {
         state.room_id: state.current_temperature
         for state in states
@@ -78,8 +156,10 @@ def simulate_scenario(
     occupied_room_minutes = 0
     history = []
 
+    # Each heating zone has its own control state.
     zone_states = {
-        zone.id: False for zone in zones
+        zone.id: False
+        for zone in zones
     }
 
     for minute in range(0, 1440, STEP_MINUTES):
@@ -99,50 +179,90 @@ def simulate_scenario(
                 continue
 
             if smart_control:
-                needed_rooms = [
+                occupied_rooms = [
                     room for room in zone_rooms
                     if room_occupied(
-                        room.id, minute, activities, weekday
-                    )
-                    or room_needed_soon(
-                        room.id, minute, activities, weekday
+                        room.id,
+                        minute,
+                        activities,
+                        weekday
                     )
                 ]
 
-                target = (
-                    COMFORT_TEMP
-                    if needed_rooms
-                    else ECO_TEMP
+                preheat_required = should_preheat_zone(
+                    zone_rooms=zone_rooms,
+                    temperatures=temperatures,
+                    activities=activities,
+                    minute=minute,
+                    weekday=weekday,
+                    outside_temperature=outside_temperature
                 )
 
-                relevant_rooms = (
-                    needed_rooms if needed_rooms
-                    else zone_rooms
-                )
+                if occupied_rooms:
+                    lowest_temp = min(
+                        temperatures[room.id]
+                        for room in occupied_rooms
+                    )
 
-                lowest_temp = min(
-                    temperatures[room.id]
-                    for room in relevant_rooms
-                )
+                    # Predict whether the occupied rooms
+                    # would become too cold in 15 minutes.
+                    predicted_temps = [
+                        predict_temperature(
+                            room=room,
+                            current_temperature=temperatures[room.id],
+                            outside_temperature=outside_temperature,
+                            minutes=STEP_MINUTES,
+                            heating_on=False
+                        )
+                        for room in occupied_rooms
+                    ]
 
-                if lowest_temp < target - 0.5:
+                    if min(predicted_temps) < COMFORT_TEMP - 0.5:
+                        zone_states[zone.id] = True
+
+                    elif lowest_temp >= COMFORT_TEMP + 0.5:
+                        zone_states[zone.id] = False
+
+                    if preheat_required:
+                        zone_states[zone.id] = True
+
+                elif preheat_required:
+                    # Start heating before an upcoming course.
                     zone_states[zone.id] = True
-                elif lowest_temp >= target + 0.5:
-                    zone_states[zone.id] = False
+
+                else:
+                    # Eco mode when the zone has no
+                    # ongoing or upcoming heating need.
+                    lowest_temp = min(
+                        temperatures[room.id]
+                        for room in zone_rooms
+                    )
+
+                    if lowest_temp < ECO_TEMP - 0.5:
+                        zone_states[zone.id] = True
+
+                    elif lowest_temp >= ECO_TEMP + 0.5:
+                        zone_states[zone.id] = False
 
                 heating_on = zone_states[zone.id]
 
             else:
+                # Baseline: heating from 06:00 to 18:00.
                 heating_on = 360 <= minute < 1080
 
+            # Update each room in the heating zone.
             for room in zone_rooms:
                 old_temp = temperatures[room.id]
 
                 occupied = room_occupied(
-                    room.id, minute, activities, weekday
+                    room.id,
+                    minute,
+                    activities,
+                    weekday
                 )
 
-                # Evaluate comfort at the start of the interval
+                # Measure thermal comfort at the beginning
+                # of each occupied interval.
                 if occupied:
                     occupied_room_minutes += STEP_MINUTES
 
@@ -161,18 +281,19 @@ def simulate_scenario(
 
                 temperatures[room.id] = next_temp
 
+                # Thermal energy consumption.
                 if heating_on:
                     heating_energy += (
                         room.heating_power / 1000
                         * STEP_MINUTES / 60
                     )
 
-                # Smart: lights follow the schedule
-                # Baseline: lights follow a fixed program
-                lights_on = (
-                    occupied if smart_control
-                    else 360 <= minute < 1080
-                )
+                # Smart lighting: ON only during courses.
+                # Baseline lighting: ON from 06:00 to 18:00.
+                if smart_control:
+                    lights_on = occupied
+                else:
+                    lights_on = 360 <= minute < 1080
 
                 if lights_on:
                     lighting_energy += (
@@ -217,34 +338,36 @@ def compare_energy(outside_temperature=-3.0, weekday=0):
     optimized = optimize_schedule()
     optimized_activities = optimized["activities"]
 
+    # Scenario A: original schedule + fixed heating.
     baseline = simulate_scenario(
-        "baseline",
-        original_activities,
-        outside_temperature,
-        weekday,
+        scenario_name="baseline",
+        activities=original_activities,
+        outside_temperature=outside_temperature,
+        weekday=weekday,
         smart_control=False
     )
 
+    # Scenario B: original schedule + predictive heating.
     smart = simulate_scenario(
-        "smart_control",
-        original_activities,
-        outside_temperature,
-        weekday,
+        scenario_name="smart_control",
+        activities=original_activities,
+        outside_temperature=outside_temperature,
+        weekday=weekday,
         smart_control=True
     )
 
+    # Scenario C: optimized schedule + predictive heating.
     optimized_smart = simulate_scenario(
-        "optimized_smart",
-        optimized_activities,
-        outside_temperature,
-        weekday,
+        scenario_name="optimized_smart",
+        activities=optimized_activities,
+        outside_temperature=outside_temperature,
+        weekday=weekday,
         smart_control=True
     )
 
-    # Compare thermal heating energy separately
     baseline_heating = baseline["heating_kwh_thermal"]
 
-    savings_percent = (
+    heating_savings_percent = (
         100 * (
             baseline_heating
             - optimized_smart["heating_kwh_thermal"]
@@ -260,7 +383,7 @@ def compare_energy(outside_temperature=-3.0, weekday=0):
         "smart_control": smart,
         "optimized_smart": optimized_smart,
         "heating_savings_percent": round(
-            savings_percent, 2
+            heating_savings_percent, 2
         ),
         "schedule_optimization": {
             "moved_activities": optimized["moved_activities"],
