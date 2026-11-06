@@ -51,5 +51,20 @@
     "heat_loss_coefficient": 85,
     "thermal_capacity": 13000000,
     "heating_power": 3500
-  }
+  },
+  
+{
+  "id": "IE_HALL_1",
+  "building": "IE",
+  "floor": 1,
+  "area_m2": 45.0,
+  "capacity": 0,
+  "room_type": "hallway",
+  "equipment": [],
+  "heating_zone": "IE_ZONE_1",
+  "heat_loss_coefficient": 70,
+  "thermal_capacity": 10000000,
+  "heating_power": 2500
+}
+
 ]

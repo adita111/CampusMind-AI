@@ -35,5 +35,16 @@
     "lights_on": false,
     "occupied": false,
     "energy_consumed_kwh": 0
-  }
+  },
+  
+{
+  "room_id": "IE_HALL_1",
+  "current_temperature": 18.0,
+  "target_temperature": 19.0,
+  "heating_on": false,
+  "lights_on": false,
+  "occupied": false,
+  "energy_consumed_kwh": 0
+}
+
 ]

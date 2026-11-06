@@ -2,6 +2,8 @@
 from fastapi import FastAPI, HTTPException
 
 from models.room import Room
+from models.building import Building, Floor
+from models.heating_zone import HeatingZone
 from models.room_state import RoomState, SimulationRequest
 
 import httpx
@@ -15,6 +17,12 @@ from services.room_service import (
     get_room_by_id,
     get_room_state,
     update_room_state
+)
+from services.campus_service import (
+    get_buildings,
+    get_floors,
+    get_heating_zones,
+    get_rooms_on_floor
 )
 
 from models.scheduled_activity import ScheduledActivity
@@ -162,3 +170,32 @@ def predict_room_heating(
     )
 
     return result
+
+
+@app.get("/buildings", response_model=list[Building])
+def list_buildings():
+    return get_buildings()
+
+
+@app.get("/buildings/{building_id}/floors", response_model=list[Floor])
+def list_floors(building_id: str):
+    if not any(b.id == building_id for b in get_buildings()):
+        raise HTTPException(404, "Building not found")
+
+    return get_floors(building_id)
+
+
+@app.get("/buildings/{building_id}/floors/{floor_number}/rooms",
+         response_model=list[Room])
+def list_rooms_on_floor(building_id: str, floor_number: int):
+    floors = get_floors(building_id)
+
+    if not any(f.number == floor_number for f in floors):
+        raise HTTPException(404, "Floor not found")
+
+    return get_rooms_on_floor(building_id, floor_number)
+
+
+@app.get("/heating-zones", response_model=list[HeatingZone])
+def list_heating_zones():
+    return get_heating_zones()
